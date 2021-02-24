@@ -65,10 +65,10 @@
 
 % Specify the document's metadata.
 \hypersetup{%
-  pdftitle={La FAQ LaTeX visuelle francophone},
-  pdfauthor={Scott Pakin, Jeremy Just},
-  pdfcontactemail={jeremy@jejust.fr},
-  pdfcontacturl={https://www.gutenberg.eu.org/faq},
+  pdftitle={The Visual LaTeX FAQ},
+  pdfauthor={Scott Pakin},
+  pdfcontactemail={scott+vfaq@pakin.org},
+  pdfcontacturl={http://www.pakin.org/\xmptilde scott},
   pdfsubject={Answers to frequently asked questions regarding LaTeX},
   pdfkeywords={%
     LaTeX, tables, figures, typesetting, spacing, spaces, hyphenation,
@@ -76,12 +76,13 @@
     bibliography, BibTeX, page numbers, footnotes, columns,
     mathematics, captions, references, citations, alignment
   },
-  pdfcopyright={Copyright (C) \the\year, Jeremy Just et Scott Pakin pour la version francaise},
+  pdfcopyright={Copyright (C) \the\year, Scott Pakin},
   pdflicenseurl={http://www.latex-project.org/lppl.txt},
-  pdfcaptionwriter={Jeremy Just},
-  pdfcontactcountry={France},
-  baseurl={http://mirror.ctan.org/info/visualFAQ-fr/visualFAQ-fr.pdf},
-  pdflang={fr-FR}
+  pdfcaptionwriter={Scott Pakin},
+  pdfcontactregion={New Mexico},
+  pdfcontactcountry={USA},
+  baseurl={http://mirror.ctan.org/info/visualFAQ/visualFAQ.pdf},
+  pdflang={en-US}
 }
 
 % Discourage the user from compiling this document himself.

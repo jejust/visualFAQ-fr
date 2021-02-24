@@ -1,34 +1,26 @@
 \documentclass[11pt,a5paper]{article}
-\usepackage[latin1]{inputenc}
 \usepackage{cooltooltips}
 \usepackage[T1]{fontenc}
 \usepackage{bookman}
-%\usepackage[activate]{pdfcprot}
+\usepackage[activate]{pdfcprot}
 \usepackage{geometry}
 \usepackage{parskip}
 \usepackage{color}
 \usepackage{titlesec}
-\usepackage[french]{babel}
 \usepackage[pdfpagemode=UseNone]{hyperref}
 
 % Define this document's metadata.
-\title{\textcolor{titlecolor}{\bfseries Guide de dépannage de la \vlf}}
+\title{\textcolor{titlecolor}{\bfseries Troubleshooting the \vlf}}
 \author{Scott Pakin \\ \textit{scott+vfaq@pakin.org}}
 \hypersetup{%
-  pdftitle={Guide de depannage de la FAQ LaTeX visuelle},
-  pdfauthor={Scott Pakin, Jeremy Just},
-%  pdfcontactemail={jeremy@jejust.fr},
-%  pdfcontacturl={https://www.gutenberg.eu.org/faq},
-  pdfsubject={Comprendre les problèmes grâce aux fonctionnalités PDF interactives},
-  pdfkeywords={FAQ LaTeX Visuelle francophone, French Visual LaTeX FAQ, PDF, hyperliens, navigateurs web},
-  baseurl={http://mirror.ctan.org/info/visualFAQ-fr/visualFAQ-fr.pdf},
-%  pdfcopyright={Copyright (C) \the\year, Jeremy Just et Scott Pakin pour la version francaise},
-%  pdflicenseurl={http://www.latex-project.org/lppl.txt},
-  pdflang={fr-FR}
+  pdftitle={Troubleshooting the Visual LaTeX FAQ},
+  pdfauthor={Scott Pakin, scott+vfaq@pakin.org},
+  pdfsubject={Helping to diagnose problems with interactive PDF features},
+  pdfkeywords={Visual LaTeX FAQ, PDF, hyperlinks, widgets, Web browser}
 }
 
 % Define a helpful shortcut.
-\newcommand*{\vlf}{\emph{FAQ \LaTeX{} Visuelle}}
+\newcommand*{\vlf}{\emph{Visual \LaTeX{} FAQ}}
 
 % Introduce a little extra space between paragraphs.
 \parskip=0.8\baselineskip
@@ -65,7 +57,7 @@ page is activated.
 The purpose of this document is to help diagnose problems involving the
 interactive features of the \vlf.
 
-Prêt?  Alors allons-y\dots
+Ready?  Then let's begin\dots
 
 
 \section{Internal hyperlinks}
