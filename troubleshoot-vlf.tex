@@ -1,5 +1,6 @@
 \documentclass[11pt,a5paper]{article}
 \usepackage[latin1]{inputenc}
+\usepackage[top=2cm]{geometry}
 \usepackage{cooltooltips}
 \usepackage[T1]{fontenc}
 \usepackage{bookman}
@@ -8,11 +9,13 @@
 \usepackage{parskip}
 \usepackage{color}
 \usepackage{titlesec}
-\usepackage[french]{babel}
+\usepackage{titlefoot}
+\usepackage{microtype}
 \usepackage[pdfpagemode=UseNone]{hyperref}
+\usepackage[french]{babel}
 
 % Define this document's metadata.
-\title{\textcolor{titlecolor}{\bfseries Guide de dépannage de la \vlf}}
+\title{\textcolor{titlecolor}{\bfseries Guide de dépannage\\ de la \vlf}}
 \author{Scott Pakin \\ \textit{scott+vfaq@pakin.org}}
 \hypersetup{%
   pdftitle={Guide de depannage de la FAQ LaTeX visuelle},
@@ -48,104 +51,123 @@
 \titleformat{\section}{\Large\bfseries\color{titlecolor}}{\thesection.}{1em}{}
 \newcommand{\sectionbreak}{\clearpage}
 
+% Footnote without marker
+% From https://tex.stackexchange.com/questions/30720/footnote-without-a-marker
+\newcommand\extrafootertext[1]{%
+  \bgroup
+    \renewcommand\thefootnote{\fnsymbol{footnote}}%
+    \renewcommand\thempfootnote{\fnsymbol{mpfootnote}}%
+    \footnotetext[0]{#1}%
+  \egroup
+}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
 \pagecolor{bgcolor}
 \hypertarget{link:title}{\maketitle}
+\extrafootertext{Traduction en français: Jérémy Just (\textit{jeremy@jejust.fr}).}
 \color{fgcolor}
 \sloppy
 
-The \vlf{} makes extensive use of PDF hyperlinks, widgets, and
-form fields.  Not all of these are supported by every PDF
-viewer.  Furthermore, even PDF viewers that support hyperlinks
-may need to be configured to launch a Web browser when a link to a Web
-page is activated.
 
-The purpose of this document is to help diagnose problems involving the
-interactive features of the \vlf.
+La \vlf{} fait un usage intensif des hyperliens PDF, des widgets et
+des champs de formulaire PDF. Tous ces éléments ne sont pas pas tous
+supportés par tous les visualisateurs de fichiers PDF. De plus, même
+les visualisateurs de PDF qui prennent en charge les hyperliens
+peuvent devoir être configurés pour lancer un navigateur Web lorsqu'un
+lien vers une page Web est appelé.
+
+L'objectif de ce document est d'aider à diagnostiquer les problèmes
+relatifs aux fonctionnalités interactives de la \vlf{}.
 
 Prêt?  Alors allons-y\dots
 
 
-\section{Internal hyperlinks}
+\section{Hyperliens internes}
 
-The simplest form of hyperlink jumps from one page of a document to
-another page in the same document:
-
-\begin{center}
-  \hyperlink{link:title}{Return to page~1.\strut}
-\end{center}
-
-The text ``Return to page~1'' is a hyperlink.  Activating it should
-take you back to the first page of this document.
-
-If nothing happens then your PDF viewer probably doesn't
-support any sort of hyperlink.  You will get little use out of the
-\vlf{} unless you switch to a PDF viewer that supports
-hyperlinks.
-
-Let's move on to the next test\dots
-
-
-\section{External hyperlinks}
-
-The PDF format supports hyperlinks to other documents,
-including non-PDF documents.  All of the hyperlinks in the
-\vlf{} refer to Web pages.  The following hyperlink points to the UK
-\TeX\ FAQ home page:
+La forme la plus simple d'hyperlien permet de passer d'une page d'un
+document à une autre page du même document:
 
 \begin{center}
-  \href{http://www.tex.ac.uk/faq}{Open a Web browser.\strut}
+  \hyperlink{link:title}{Retourner à la page~1.\strut}
 \end{center}
 
-If nothing happens when you activate ``Open a Web browser'' then one
-of the following is likely to be the case:
+Le texte \og{}Retourner à la page~1\fg{} est un hyperlien. En cliquant
+dessus, vous devriez revenir à la première page de ce document.
+
+Si rien ne se passe, c'est que votre visualisateur de PDF ne prend
+probablement pas en charge les hyperliens. La \vlf{} ne vous sera d'aucune
+utilité si vous ne passez pas à un visualisateur qui prend en charge
+les hyperliens.
+
+Passons au test suivant\dots
+
+
+\section{Hyperliens externes}
+
+Le format PDF prend en charge les liens hypertextes vers d'autres documents,
+y compris vers des documents non-PDF. Tous les hyperliens de la la FAQ font
+référence à des pages web. L'hyperlien suivant pointe vers la page
+d'accueil de la FAQ \LaTeX{} francophone:
+
+\begin{center}
+  \href{https://faq.gutenberg.eu.org/}{Ouvrir un navigateur web.\strut}
+\end{center}
+
+Si rien ne se passe lorsque vous cliquez sur \og{}Ouvrir un navigateur web\fg{},
+il est probable que vous soyez dans l'une des situations suivantes :
 
 \begin{itemize}
-  \item Your PDF viewer doesn't support external hyperlinks.
-  You will get little use out of the \vlf{} unless you switch to a
-  PDF viewer that supports hyperlinks.
+  \item Votre visualiseur PDF ne prend pas en charge les hyperliens externes.
+  La \vlf{} ne vous sera pas d'une grande utilité si vous ne passez pas
+  à un visualiseur de PDF qui prend en charge les liens hypertextes.
 
-  \item You need to tell your PDF viewer which application you want to
-  use as your Web browser.  In some of Adobe's PDF viewers, the
-  browser-selection dialog can be found under
-  \Acrobatmenu{GeneralPrefs}{Edit$\rightarrow$\linebreak[0]Preferences$\rightarrow$\linebreak[0]Internet\strut}.
-  The procedure to associate a Web browser with external hyperlinks
-  will of course be different in other PDF viewers.
+  \item Vous devez indiquer à votre visualisateur de PDF l'application que
+  vous souhaitez utiliser comme navigateur web. Pour certains visualisateurs
+  PDF d'Adobe, la boîte de dialogue de sélection du navigateur se trouve sous
+  \Acrobatmenu{GeneralPrefs}{Édition$\rightarrow$\linebreak[0]Préférences$\rightarrow$\linebreak[0]Internet\strut}.
+  La procédure d'association d'un navigateur web aux hyperliens externes
+  sera bien sûr différente avec d'autres visualisateurs de PDF.
 \end{itemize}
 
-If your PDF viewer opened a Web browser at the UK \TeX\ FAQ
-home page, then you'll likely be able to use the \vlf.
+Si votre visualisateur PDF a ouvert un navigateur Web pointant sur la page
+d'accueil de FAQ \LaTeX{} francophone, alors vous serez certainement
+en mesure d'utiliser la \vlf.
 
-There's just one final test to try to make sure\dots
+Il reste juste un dernier test à effectuer pour en être sûr\dots
 
 
-\section{Pop-up notes}
+\section{Notes contextuelles}
 
-Instead of relying upon simple hyperlinks, the \vlf{} works some PDF
-magic to convey additional information via tooltips and pop-up notes.
-Unfortunately, few PDF viewers support all of the requisite PDF
-mechanisms: \textsf{Text} annotations, \textsf{Widget} annotations,
-form fields, and JavaScript.  See if the following hyperlink works in
-your PDF viewer:
+La \vlf{} ne s'appuie pas seulement sur de simples liens hypertextes,
+et fait également appel à la magie du PDF pour transmettre des informations
+supplémentaires par le biais d'infobulles et de notes contextuelles.
+Malheureusement, peu de visualisateurs de PDF prennent en charge tous
+les mécanismes requis: annotations de type \textsf{Text} ou \textsf{Widget},
+champs de formulaires et JavaScript. Vérifiez si l'hyperlien suivant
+fonctionne dans votre visualisateur de PDF:
 
 \begin{center}
-  \cooltooltip[0 0 1]{A pop-up note}{Additional information would
-  normally appear here.}{http://www.tex.ac.uk/faq}{The UK TeX
-  FAQ}{Fancy, \vlf-style hyperlink\strut}
+  \shorthandoff{:}
+  \cooltooltip[0 0 1]{Note contextuelle}{Des informations supplémentaires
+  devraient apparaître ici.}{https://faq.gutenberg.eu.org/}{FAQ LaTeX
+  francophone}{Lien hypertexte comme dans la \vlf.\strut}
+  \shorthandon{:}
 \end{center}
 
-If all goes well, moving the mouse pointer over the ``Fancy,
-\vlf-style hyperlink'' text should display a tooltip that reads,
-``\textsf{The UK TeX FAQ}'', and pop up a small window entitled
-``\textsf{A pop-up note}'' and containing a line of text.
+Si tout va bien, en plaçant le pointeur de la souris sur le texte
+\og{}Lien hypertexte comme dans la \vlf{}\fg{}, vous devriez voir apparaître
+une info-bulle indiquant \og{}FAQ \LaTeX{} francophone\fg{} et faire surgir
+une petite fenêtre intitulée \og{}Note contextuelle\fg{} et contenant une ligne
+de texte.
 
-Whether or not the tooltip and pop-up note work in your PDF viewer,
-activating the hyperlink should open a Web browser at the UK \TeX\ FAQ
-home page.  If so, then \mbox{\emph{Congratulations!}}; the \vlf{} is
-almost certainly usable with your PDF viewer.  If not, then
-\cooltooltiptoggle{\fcolorbox{titlecolor}{bgcolor}{disabling pop-ups}}
-(clicking again re-enables them) may solve the problem.
+Que l'info-bulle et la note contextuelle fonctionnent ou non dans votre
+visualisateur de PDF, cliquer sur l'hyperlien devrait ouvrir un navigateur
+web sur la page d'accueil de la FAQ \LaTeX{} francophone. Si c'est le cas,
+\mbox{\emph{félicitations!}} La \vlf{} est quasi-certainement utilisable
+avec votre visualisateur de PDF. Si ce n'est pas le cas, la
+\cooltooltiptoggle{\fcolorbox{titlecolor}{bgcolor}{désactivation des notes contextuelles}}
+peut résoudre le problème (un nouveau clic les réactivera).
 
 \end{document}
