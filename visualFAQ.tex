@@ -175,12 +175,12 @@
 \let\nolinkfootnotemark=\H@@footnotemark
 \makeatother
 
-% FAQuk: "Alternative head- and footlines in LaTeX" (fancyhdr)
-%   FAQfr: "" ()
-% FAQuk: "Page numbering '<n> of <m>'" (nofm)
-%   FAQfr: "" ()
-% FAQuk: "How many pages are there in my document?" (howmanypp)
-%   FAQfr: "" ()
+% FAQuk:   "Alternative head- and footlines in LaTeX" (fancyhdr)
+%   FAQfr: "Comment définir les hauts et bas de page?" (3_composition/texte/pages/composer_des_en-tetes_et_pieds_de_page)
+% FAQuk:   "Page numbering '<n> of <m>'" (nofm)
+%   FAQfr: "Comment obtenir la numérotation « page <K> sur <N> »?" (3_composition/texte/pages/numerotation_des_pages/numeroter_les_pages_avec_k_sur_n)
+% FAQuk:   "How many pages are there in my document?" (howmanypp)
+%   FAQfr: "Comment compter le nombre de pages d'un document?" (3_composition/texte/document/combien_de_pages_a_mon_document)
 \fancypagestyle{fancybasic}{%
   \fancyhf{}
   \fancyhead[LO,RE]{%
@@ -196,8 +196,8 @@
 }
 \pagestyle{fancybasic}
 
-% FAQuk: "Page numbering by chapter" (pagebychap)
-%   FAQfr: "" ()
+% FAQuk:   "Page numbering by chapter" (pagebychap)
+%   FAQfr: "Comment réinitialiser la numérotation des pages à chaque chapitre?" (3_composition/texte/pages/numerotation_des_pages/numeroter_les_pages_par_chapitre)
 \newcounter{sectionfirstpage}
 \newcounter{pageofsection}
 \fancypagestyle{fancyaltpagenum}{%
@@ -224,10 +224,10 @@
 |egroup
 \let\verbspace=\space
 
-% FAQuk: "How to get rid of page numbers" (nopageno)
-%   FAQfr: "" ()
-% FAQuk: "I asked for 'empty', but the page is numbered" (emptynum)
-%   FAQfr: "" ()
+% FAQuk:   "How to get rid of page numbers" (nopageno)
+%   FAQfr: "Comment supprimer la numérotation des pages?" (3_composition/texte/pages/numerotation_des_pages/supprimer_les_numeros_de_pages)
+% FAQuk:   "I asked for 'empty', but the page is numbered" (emptynum)
+%   FAQfr: "Comment supprimer la numérotation des pages?" (3_composition/texte/pages/numerotation_des_pages/supprimer_les_numeros_de_pages)
 \fancypagestyle{fancyplain}{%
   \fancyhf{}
   \renewcommand{\headrulewidth}{0pt}
@@ -335,8 +335,8 @@
   }%
 }
 
-% FAQuk: "The style of document titles" (titlsty)
-%   FAQfr: "" ()
+% FAQuk:   "The style of document titles" (titlsty)
+%   FAQfr: "Comment modifier le style des titres de sectionnement?" (3_composition/texte/titres/modifier_le_style_des_titres)
 \noindent
 \faq{titlsty}{"The style of document titles"}{%
   \begin{minipage}{\linewidth}
@@ -356,8 +356,8 @@
 }
 \vspace{1cm}
 
-% FAQuk: "1-column abstract in 2-column document" (onecolabs)
-%   FAQfr: "" ()
+% FAQuk:   "1-column abstract in 2-column document" (onecolabs)
+%   FAQfr: "Comment obtenir un résumé en pleine largeur dans un document à deux colonnes?" (3_composition/texte/paragraphes/resume_sur_une_colonne_dans_un_document_en_deux_colonnes)
 \noindent
 \faq{onecolabs}{"1-column abstract in 2-column document"}{%
 \begin{minipage}{\linewidth}
@@ -378,8 +378,8 @@
 }
 \bigskip
 
-% FAQuk: "Changing the margins in LaTeX" (changemargin)
-%   FAQfr: "" ()
+% FAQuk:   "Changing the margins in LaTeX" (changemargin)
+%   FAQfr: "Comment redéfinir les marges d'un document?" (3_composition/texte/pages/modifier_les_marges_d_un_document)
 \makeatletter
 \newsavebox{\marginbox}
 \begin{lrbox}{\marginbox}
@@ -401,8 +401,8 @@
 \section{Magna condimentum}
 \thispagestyle{fancyplain}   % Why can't this go earlier?
 
-% FAQuk: "Big letters at the start of a paragraph" (dropping)
-%   FAQfr: "" ()
+% FAQuk:   "Big letters at the start of a paragraph" (dropping)
+%   FAQfr: "Comment mettre en valeur la première lettre d'un paragraphe?" (3_composition/texte/titres/commencer_un_paragraphe_par_une_lettrine)
 \lettrine[lines=3]{\faq{dropping}{"Big letters at the start of a
 paragraph"}{L}}{orem} ipsum dolor sit amet, consectetuer adipiscing
 elit. Ut ligula nisl, euismod at, sagittis dapibus, dapibus non,
@@ -411,10 +411,10 @@ ullamcorper eu, eros.  \AE{}nean eget langilla metus non mi.  Vivamus
 facilisis laoreet massa. Fusce nunc mi, rutrum et, cursus sed, congue
 ac, velit.
 
-% FAQuk: "Changing the space between letters" (letterspace)
-%   FAQfr: "" ()
-% FAQuk: "Realistic quotes for verbatim listings" (upquot)
-%   FAQfr: "" ()
+% FAQuk:   "Changing the space between letters" (letterspace)
+%   FAQfr: "Comment modifier l'espacement entre caractères?" (3_composition/texte/mots/modifier_l_espacement_entre_les_caracteres)
+% FAQuk:   "Realistic quotes for verbatim listings" (upquot)
+%   FAQfr: "Comment avoir des guillemets réalistes dans du code en verbatim?" (4_domaines_specialises/informatique/vrais_guillemets_en_mode_verbatim)
 \newcommand*{\upquotfaq}[1]{%
   \faq{upquot}{"Realistic quotes for verbatim listings"}{#1}%
 }
@@ -431,10 +431,10 @@ enim\upquotfaq{\textquotesingle}\upquotfaq{\textasciigrave}expr 2 +
 lorem sem sagittis est, vit\ae{} laoreet odio arcu auctor
 consectetuer.
 
-% FAQuk: "What's the name of this file" (filename)
-%   FAQfr: "" ()
-% FAQuk: "Printing the time" (time)
-%   FAQfr: "" ()
+% FAQuk:   "What's the name of this file" (filename)
+%   FAQfr: "Comment afficher le nom du fichier compilé?" (3_composition/texte/document/utiliser_le_nom_de_fichier_dans_le_document)
+% FAQuk:   "Printing the time" (time)
+%   FAQfr: "Comment insérer l'heure dans un document?" (3_composition/texte/mots/inserer_l_heure_dans_un_document)
 In vehicula sagittis nisl. M\ae{}cenas malesuada feugiat eros. Nulla
 facilisis accumsan quam. Nulla id nunc \faq{filename}{"What's the name
 of this file"}{\strut\texttt{\jobname.tex}} duis \faq{time}{"Printing
@@ -442,14 +442,14 @@ the time"}{\strut\today~10:51pm} facilisis tristique
 lectus. Vestibulum ante ipsum primis in faucibus orci luctus et
 ultrices posuere cubilia cur\ae{}; Vivamus dictum nibh vit\ae{} mi.
 
-% FAQuk: "How to use the underscore character" (underscore)
-%   FAQfr: "" ()
-% FAQuk: "Typesetting the Euro sign" (euro)
-%   FAQfr: "" ()
-% FAQuk: "How to get copyright, trademark, etc." (tradesyms)
-%   FAQfr: "" ()
-% FAQuk: "Where can I find the symbol for ..." (symbols)
-%   FAQfr: "" ()
+% FAQuk:   "How to use the underscore character" (underscore)
+%   FAQfr: "Comment obtenir les différents tirets?" (3_composition/texte/symboles/caracteres/tiret)
+% FAQuk:   "Typesetting the Euro sign" (euro)
+%   FAQfr: "Comment obtenir le symbole de l'euro?" (3_composition/texte/symboles/caracteres/caractere_euro)
+% FAQuk:   "How to get copyright, trademark, etc." (tradesyms)
+%   FAQfr: "Comment obtenir un symbole copyright, trademark ou registered?" (3_composition/texte/symboles/caracteres/copyright)
+% FAQuk:   "Where can I find the symbol for ..." (symbols)
+%   FAQfr: "Caractères" (3_composition/texte/symboles/caracteres/start)
 At vero eos et accusam et fabulas deleni \faq{underscore}{"How to use
 the underscore character"}{\texttt{justo\_duo\_dolores()}} et ea
 rebum. Stet clita kasd gubergren, no sea takimata
@@ -464,12 +464,12 @@ etc." and \wheresym}{\textcopyright}~\the\year\ alia Utinam Aliquam
 ut vel no laudem eirmod virtute.
 \end{multicols}
 
-% FAQuk: "How to change LaTeX's 'fixed names'" (fixnam)
-%   FAQfr: "" ()
-% FAQuk: "Numbers too large in table of contents, etc." (tocloftwrong)
-%   FAQfr: "" ()
-% FAQuk: "The format of the Table of Contents, etc." (tocloft)
-%   FAQfr: "" ()
+% FAQuk:   "How to change LaTeX's 'fixed names'" (fixnam)
+%   FAQfr: "Comment changer les textes prédéfinis de LaTeX?" (3_composition/langues/traduire_le_titre_de_table_des_matieres_ou_bibliographie)
+% FAQuk:   "Numbers too large in table of contents, etc." (tocloftwrong)
+%   FAQfr: "Comment faire si les numéros dépassent de la table des matières?" (3_composition/annexes/tables/nombres_trop_grands_dans_la_table_des_matieres)
+% FAQuk:   "The format of the Table of Contents, etc." (tocloft)
+%   FAQfr: "Comment changer le style de la table des matières?" (3_composition/annexes/tables/changer_le_style_de_la_table_des_matieres)
 \makeatletter
 \renewcommand*\l@subsection{\@dottedtocline{2}{1.5em}{17pt}}
 \def\afnumberline#1#2{%
@@ -521,8 +521,8 @@ ut vel no laudem eirmod virtute.
 
 \section{Morbi tincidunt lacus}
 
-% FAQuk: "Typesetting epigraphs" (epigraph)
-%   FAQfr: "" ()
+% FAQuk:   "Typesetting epigraphs" (epigraph)
+%   FAQfr: "Comment obtenir une épigraphe?" (3_composition/texte/titres/ajouter_une_epigraphe_sur_la_page_de_titre2)
 \begin{flushright}
 \faq{epigraph}{"Typesetting epigraphs"}{%
 \begin{minipage}{0.5\linewidth}
@@ -536,8 +536,8 @@ leo, nec sodales libero urna tincidunt tellus.}
 
 \medskip
 
-% FAQuk: "Why doesn't \verb work within ...?" (verbwithin)
-%   FAQfr: "" ()
+% FAQuk:   "Why doesn't \verb work within ...?" (verbwithin)
+%   FAQfr: "Pourquoi le mode verbatim ne marche pas toujours?" (3_composition/texte/paragraphes/pourquoi_verbatim_ne_fonctionne_pas_toujours)
 \newsavebox{\verbbox}
 \begin{lrbox}{\verbbox}
 \verb.`~!@#$%^&*()-_+=[]{}|\;:'<>.
@@ -559,8 +559,8 @@ natoque.
 
 \subsection{Vehicula enim}
 
-% FAQuk: "Typesetting URLs" (setURL)
-%   FAQfr: "" ()
+% FAQuk:   "Typesetting URLs" (setURL)
+%   FAQfr: "Comment écrire des adresses web (ou URL)?" (3_composition/texte/mots/mettre_en_forme_des_url_et_des_adresses_electroniques)
 Nunc nonummy sapien nec quam. Phasellus eros est, eleifend vel,
 aliquam id, tempor \faq{setURL}{"Typesetting
 URLs"}{\nolinkurl{http://this.is/~my/typeset/URL.html}} iaculis,
@@ -573,8 +573,8 @@ Aliquam quis justo vel lectus rhoncus placerat.  Elementum
 lobortis. Torquent dolor integer commodo sapien tristique dictum non
 pr\ae{}sent lorem ornare, sapien dis.
 
-% FAQuk: "Quality of PDF from PostScript" (dvips-pdf)
-%   FAQfr: "" ()
+% FAQuk:   "Quality of PDF from PostScript" (dvips-pdf)
+%   FAQfr: "Quality of PDF from PostScript" (5_fichiers/pdf/generer_un_fichier_pdf_de_qualite)
 \smallskip\noindent
 \antifaq{dvips-pdf}{"Quality of PDF from PostScript"}{\includegraphics{fuzzytext}}
 
@@ -584,8 +584,8 @@ nulla vit\ae{} nisl.  Vivamus sem eros, sollicitudin at, volutpat at,
 pretium ut, mi. Cras erat. Vivamus sagittis. Phasellus id elit non
 massa auctor tempor.
 
-% FAQuk: "How to create a \subsubsubsection" (subsubsub)
-%   FAQfr: "" ()
+% FAQuk:   "How to create a \subsubsubsection" (subsubsub)
+%   FAQfr: "Comment créer une \subsubsubsection?" (3_composition/texte/titres/creer_un_niveau_subsubsubsection)
 \bigskip
 \noindent
 \faq{subsubsub}{"How to create a \verbbslash\verbbslash subsubsubsection"}{%
@@ -601,8 +601,8 @@ nisi. Cras rutrum dignissim libero.  Nulla consequat risus non nisl.
 
 \section{Fusce dignissim}
 
-% FAQuk: "Indent after section headings" (secindent)
-%   FAQfr: "" ()
+% FAQuk:   "Indent after section headings" (secindent)
+%   FAQfr: "Comment changer le retrait en début de paragraphe?" (3_composition/texte/paragraphes/changer_l_indentation_en_debut_de_paragraphe)
 \faq{secindent}{"Indent after section headings"}{\hspace*{2em}\strut}%
 \AE{}nean tincidunt ipsum tincidunt felis. Class aptent taciti
 sociosqu ad litora torquent per conubia nostra, per inceptos
@@ -616,8 +616,8 @@ curabitur fames habitant ullamcorper interdum lobortis.
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{\baselineskip}
 
-% FAQuk: "Zero paragraph indent" (parskip)
-%   FAQfr: "" ()
+% FAQuk:   "Zero paragraph indent" (parskip)
+%   FAQfr: "Comment obtenir des paragraphes sans indentation?" (3_composition/texte/paragraphes/supprimer_l_indentation_en_debut_de_paragraphe)
 Pr\ae{}sent varius vehicula enim. Proin nec massa. Vivamus lorem pede,
 rhoncus et, mollis ut, laoreet nec, justo. Nullam vel
 mauris. \AE{}nean quis libero.  Sed tempus lobortis ante. Duis euismod
@@ -640,8 +640,8 @@ sem, nec pharetra nisl metus vehicula sapien.
 \endgroup
 
 
-% FAQuk: "The style of section headings" (secthead)
-%   FAQfr: "" ()
+% FAQuk:   "The style of section headings" (secthead)
+%   FAQfr: "Comment modifier le style des titres de (sub-)sections?" (3_composition/texte/titres/modifier_le_style_des_titres)
 \bigskip
 \refstepcounter{section}
 \begin{center}
@@ -657,13 +657,13 @@ sem, nec pharetra nisl metus vehicula sapien.
 \phantomsection
 \addcontentsline{toc}{section}{Donec purus}
 
-% FAQuk: "Page numbering by chapter" (pagebychap)
-%   FAQfr: "" ()
+% FAQuk:   "Page numbering by chapter" (pagebychap)
+%   FAQfr: "Comment réinitialiser la numérotation des pages à chaque chapitre?" (3_composition/texte/pages/numerotation_des_pages/numeroter_les_pages_par_chapitre)
 \setcounter{sectionfirstpage}{\thepage}
 \pagestyle{fancyaltpagenum}
 
-% FAQuk: "Sorting and compressing citations" (citesort)
-%   FAQfr: "" ()
+% FAQuk:   "Sorting and compressing citations" (citesort)
+%   FAQfr: "Comment trier et compacter les références bibliographiques?" (3_composition/annexes/bibliographie/grouper_des_references_bibligraphiques_multiples)
 \noindent
 Mauris mi libero, sollicitudin nec, sollicitudin ac, facilisis vel,
 tellus. Sed dapibus semper dolor. Morbi tincidunt lacus et
@@ -674,8 +674,8 @@ velit~\fakecite{backbackref1}. Aliquam suscipit ante nec felis. Sed
 nonummy mauris eget neque. Fusce dignissim, pede ac euismod fermentum,
 eros magna dapibus leo, nec sodales libero urna tincidunt tellus.
 
-% FAQuk: "Using PostScript fonts with TeX" (usepsfont)
-%   FAQfr: "" ()
+% FAQuk:   "Using PostScript fonts with TeX" (usepsfont)
+%   FAQfr: "Using Adobe Type 1 fonts with TeX" (5_fichiers/fontes/utiliser_des_fontes_adobe_t1_avec_tex)
 \noindent
 \faq{usepsfont}{"Using PostScript fonts with TeX"}{%
 \begin{minipage}{\linewidth}
@@ -693,8 +693,8 @@ intellegam.}  {\usefont{T1}{pnc}{m}{n} Ex nihil aperiri per.}
 \end{minipage}%
 }
 
-% FAQuk: "Top-aligning imported graphics" (topgraph)
-%   FAQfr: "" ()
+% FAQuk:   "Top-aligning imported graphics" (topgraph)
+%   FAQfr: "Comment aligner le haut de graphiques importés?" (3_composition/illustrations/aligner_des_images_en_haut)
 \begin{figure}[tp]
   \faq{topgraph}{"Top-aligning imported graphics"}{%
     \begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}c@{\extracolsep{\fill}}c@{\extracolsep{\fill}}l}
@@ -721,8 +721,8 @@ intellegam.}  {\usefont{T1}{pnc}{m}{n} Ex nihil aperiri per.}
     & (a)~Sollicitudin ac & (b)~Fusce ut massa \\
   \end{tabular*}%
   }
-  % FAQuk: "The style of captions" (captsty)
-  %   FAQfr: "" ()
+  % FAQuk:   "The style of captions" (captsty)
+  %   FAQfr: "Comment changer la mise en forme des légendes?" (3_composition/flottants/legendes/modifier_l_apparence_des_legendes)
   \makeatletter
   \renewcommand{\fnum@figure}{%
     \faq{captsty}{"The style of captions"}{\textbf{Fig.~\thefigure}}}
@@ -731,8 +731,8 @@ intellegam.}  {\usefont{T1}{pnc}{m}{n} Ex nihil aperiri per.}
   \label{fig:topaligned}
 \end{figure}
 
-% FAQuk: "Footnotes in LaTeX section headings" (ftnsect)
-%   FAQfr: "" ()
+% FAQuk:   "Footnotes in LaTeX section headings" (ftnsect)
+%   FAQfr: "Comment mettre une note de bas de page dans un titre?" (3_composition/texte/footnotes/inserer_une_note_de_bas_de_page_dans_un_titre)
 \addtocounter{footnote}{1}
 \subsection[Mauris sagittis]{%
   Mauris sagittis%
@@ -740,8 +740,8 @@ intellegam.}  {\usefont{T1}{pnc}{m}{n} Ex nihil aperiri per.}
                {\normalfont\textsuperscript{\footnotesize{\thefootnote}}}%
   \footnotetext{Nulla non augue sed sem accumsan lobortis.}}
 
-% FAQuk: "Double-spaced documents in LaTeX" (linespace)
-%   FAQfr: "" ()
+% FAQuk:   "Double-spaced documents in LaTeX" (linespace)
+%   FAQfr: "Comment modifier l'interligne d'un document?" (3_composition/texte/paragraphes/modifier_l_interligne)
 \noindent
 \faq{linespace}{"Double-spaced documents in LaTeX"}{%
 \begin{minipage}{\linewidth}
@@ -767,8 +767,8 @@ iaculis rutrum.\strut
 
 \subsection{Lacus aliquam egestas}
 
-% FAQuk: "Overstriking characters" (overstrike)
-%   FAQfr: "" ()
+% FAQuk:   "Overstriking characters" (overstrike)
+%   FAQfr: "Comment barrer ou biffer du texte?" (3_composition/texte/symboles/obtenir_des_caracteres_barres)
 Suscipit senectus luctus duis mattis suspendisse nascetur lectus metus
 \AE{}nean quisque non. Justo tortor ante blandit hac
 \faq{overstrike}{"Overstriking characters"}{\sout{sollicitudin}\strut}
@@ -778,8 +778,8 @@ elementum accumsan. Dui nulla purus primis nibh parturient varius dis
 quisque porttitor. Malesuada aliquet nostra. Erat rutrum, senectus
 volutpat:
 
-% FAQuk: "How to reduce list spacing" (complist)
-%   FAQfr: "" ()
+% FAQuk:   "How to reduce list spacing" (complist)
+%   FAQfr: "Comment modifier les espacements dans les listes?" (3_composition/texte/listes/ajuster_l_espacement_dans_les_listes)
 \begingroup
 \faq{complist}{"How to reduce list spacing"}{%
   \begin{minipage}[b]{8em}
@@ -798,8 +798,8 @@ volutpat:
 }
 \endgroup
 
-% FAQuk: "Sub- and superscript positioning for operators" (limits)
-%   FAQfr: "" ()
+% FAQuk:   "Sub- and superscript positioning for operators" (limits)
+%   FAQfr: "Comment positionner les limites des grands opérateurs?" (4_domaines_specialises/mathematiques/changer_la_position_des_limites_autour_des_sommes_et_integrales)
 Tortor sem imperdiet diam, eu condimentum eros est ut est. Nullam a
 neque. Nulla pellentesque sollicitudin neque.  Vestibulum ante ipsum
 primis in faucibus orci luctus et ultrices posuere cubilia cur\ae{};
@@ -808,8 +808,8 @@ suscipit justo \faq{limits}{"Sub- and superscript positioning for
 operators"}{$\lim\limits_{n \rightarrow \infty}$}$\,\frac{1}{n^2}$ in
 lorem. Sed feugiat:
 
-% FAQuk: "Set specifications and Dirac brackets" (braket)
-%   FAQfr: "" ()
+% FAQuk:   "Set specifications and Dirac brackets" (braket)
+%   FAQfr: "Set specifications and Dirac brackets" (4_domaines_specialises/mathematiques/symboles_de_separateurs)
 \begin{equation}
   \faq{braket}{"Set specifications and Dirac brackets"}{%
     \ensuremath{\displaystyle
@@ -817,18 +817,18 @@ lorem. Sed feugiat:
     }%
   }%
   =
-% FAQuk: "Text inside maths" (mathstext)
-%   FAQfr: "" ()
+% FAQuk:   "Text inside maths" (mathstext)
+%   FAQfr: "Text inside maths" (4_domaines_specialises/mathematiques/composer_du_texte_en_mode_mathematique)
   \Phi_{\text{\faq{mathstext}{"Text inside maths"}{raffinium}}}
   +
-% FAQuk: "Sub- and superscript positioning for operators" (limits)
-%   FAQfr: "" ()
+% FAQuk:   "Sub- and superscript positioning for operators" (limits)
+%   FAQfr: "Comment positionner les limites des grands opérateurs?" (4_domaines_specialises/mathematiques/changer_la_position_des_limites_autour_des_sommes_et_integrales)
   \faq{limits}{"Sub- and superscript positioning for operators"}%
     {$\displaystyle\sum\nolimits_{i=0}^{x-y}$} \: \Psi^i
 \end{equation}
 
-% FAQuk: "Underlined text won't break" (underline)
-%   FAQfr: "" ()
+% FAQuk:   "Underlined text won't break" (underline)
+%   FAQfr: "Comment obtenir un soulignement de plusieurs lignes de texte?" (3_composition/texte/lignes/texte_souligne_qui_depasse_dans_la_marge)
 \begingroup
 \setlength{\parfillskip}{0pt}%
 Nulla consequat risus non nisl. Pr\ae{}sent nibh. In vulputate massa
@@ -849,8 +849,8 @@ Nullam interdum nisl sed purus. Cras vestibulum. Fusce ut massa.
 
 \subsection{Inceptos lacinia tortor vit\ae{} pulvinar convallis}
 
-% FAQuk: "Weird characters in dvips output" (charshift)
-%   FAQfr: "" ()
+% FAQuk:   "Weird characters in dvips output" (charshift)
+%   FAQfr: "Caractères bizarres dans la sortie de `dvips`" (5_fichiers/fontes/caracteres_bizarres_avec_dvips)
 Netus et malesuada fames ac turpis egestas. Vestibulum erat nisl,
 pharetra in, elementum id, luctus sit amet,
 pede~\fakecite{backbackref2}. Morbi in mauris sit amet pede luctus
@@ -872,8 +872,8 @@ euismod quam dolor vel metus. Nam luctus sodales velit. Curabitur
 molestie tellus aliquet arcu. Ut laoreet.  Donec tempor dui placerat
 mauris. Cras magna. Suspendisse pulvinar.
 
-% FAQuk: "Interrupting enumerated lists" (interruptlist)
-%   FAQfr: "" ()
+% FAQuk:   "Interrupting enumerated lists" (interruptlist)
+%   FAQfr: "Comment interrompre temporairement une liste numérotée?" (3_composition/texte/listes/interrompre_une_liste_numerotee)
 \noindent
 \faq{interruptlist}{"Interrupting enumerated lists"}{%
   \begin{minipage}{7em}
@@ -887,8 +887,8 @@ mauris. Cras magna. Suspendisse pulvinar.
   \end{minipage}
 }
 
-% FAQuk: "Commands gobble following space" (xspace)
-%   FAQfr: "" ()
+% FAQuk:   "Commands gobble following space" (xspace)
+%   FAQfr: "Pourquoi l'espace disparaît après une commande?" (3_composition/texte/mots/une_commande_avale_l_espace_qui_la_suit)
 Etiam eget nisl nec neque congue sollicitudin. Duis dapibus consequat
 justo. Sed elit turpis, mollis sed, sodales vel, interdum ac,
 felis. \AE{}nean nisl lacus, fringilla in, ornare non, sodales non,
@@ -897,8 +897,8 @@ space"}{\LaTeX repudiand\ae{}\strut} clita ocurreret has. Sed
 imperdiet convallis ante. In non magna ac dolor tincidunt dapibus. In
 hac habitasse platea dictumst.
 
-% FAQuk: "Fancy enumeration lists" (enumerate)
-%   FAQfr: "" ()
+% FAQuk:   "Fancy enumeration lists" (enumerate)
+%   FAQfr: "Comment modifier le style des listes numérotées?" (3_composition/texte/listes/modifier_le_style_des_listes_numerotees)
 \newcommand*{\boxroman}[1]{%
   \makebox[2em][r]{\faq{enumerate}{"Fancy enumeration lists"}{(#1)}}}
 \begin{itemize}
@@ -909,10 +909,10 @@ hac habitasse platea dictumst.
   \item[\boxroman{v}] tincidunt
 \end{itemize}
 
-% FAQuk: "The design of tables" (destable)
-%   FAQfr: "" ()
-% FAQuk: "Fixed-width tables" (fixwidtab)
-%   FAQfr: "" ()
+% FAQuk:   "The design of tables" (destable)
+%   FAQfr: "Pourquoi les tableaux en LaTeX sont laids?" (3_composition/tableaux/mes_tableaux_sont_moches)
+% FAQuk:   "Fixed-width tables" (fixwidtab)
+%   FAQfr: "Comment fixer la largeur d'un tableau?" (3_composition/tableaux/fixer_la_largeur_d_un_tableau)
 \begin{table}[tp]
   \topcaption{%
     \faq{destable}{"The design of tables"}%
@@ -944,16 +944,16 @@ hac habitasse platea dictumst.
   \rule[-10pt]{1pt}{20pt}\leaders\hbox{\rule[-0.5pt]{1pt}{1pt}}\hfill\kern0pt\rule[-10pt]{1pt}{20pt}
 \end{table}
 
-% FAQuk: "How to do bold-tt or bold-sc" (bold-extras)
-%   FAQfr: "" ()
-% FAQuk: "What's wrong with \bf, \it, etc.?" (2letterfontcmd)
-%   FAQfr: "" ()
-% FAQuk: "Symbols for the number sets" (numbersets)
-%   FAQfr: "" ()
-% FAQuk: "Better script fonts for maths" (scriptfonts)
-%   FAQfr: "" ()
-% FAQuk: "Setting bold Greek letters in LaTeX" (boldgreek)
-%   FAQfr: "" ()
+% FAQuk:   "How to do bold-tt or bold-sc" (bold-extras)
+%   FAQfr: "Comment obtenir des petites capitales grasses?" (5_fichiers/fontes/petites_capitales_grasses)
+% FAQuk:   "What's wrong with \bf, \it, etc.?" (2letterfontcmd)
+%   FAQfr: "Pourquoi éviter d'utiliser les commandes \bf, \it, etc.?" (3_composition/texte/symboles/polices/pourquoi_ne_pas_utiliser_bf_et_it)
+% FAQuk:   "Symbols for the number sets" (numbersets)
+%   FAQfr: "Comment écrire les symboles d'ensembles?" (4_domaines_specialises/mathematiques/symboles_d_ensembles)
+% FAQuk:   "Better script fonts for maths" (scriptfonts)
+%   FAQfr: "Better script fonts for maths" (4_domaines_specialises/mathematiques/police_script_pour_les_mathematiques)
+% FAQuk:   "Setting bold Greek letters in LaTeX" (boldgreek)
+%   FAQfr: "Comment utiliser des lettres grecques grasses en mode mathématique?" (4_domaines_specialises/mathematiques/lettres_grecques_en_gras)
 \newcommand*{\faqmathchar}[3]{%
   \faq{#1}{#2 and \wheresym}{\strut\,\ensuremath{#3}\,}%
 }
@@ -987,8 +987,8 @@ duis pellentesque semper. Tellus aliquam, aliquam vestibulum leo
 condimentum rutrum pellentesque. Eu adipiscing m\ae{}cenas ullamcorper
 velit nullam vestibulum.
 
-% FAQuk: "Conversion from (La)TeX to HTML" (LaTeX2HTML)
-%   FAQfr: "" ()
+% FAQuk:   "Conversion from (La)TeX to HTML" (LaTeX2HTML)
+%   FAQfr: "Conversion from (La)TeX to HTML" (5_fichiers/xml/convertir_du_latex_en_html)
 \begin{figure}[htbp]
   \centering
   \faq{LaTeX2HTML}{"Conversion from (La)TeX to HTML"}%
@@ -998,10 +998,10 @@ velit nullam vestibulum.
 
 \subsection{Nunc varius}
 
-% FAQuk: "Missing symbol commands" (misssymb)
-%   FAQfr: "" ()
-% FAQuk: "Where can I find the symbol for ..." (symbols)
-%   FAQfr: "" ()
+% FAQuk:   "Missing symbol commands" (misssymb)
+%   FAQfr: "Qu'est devenu ce symbole apparemment perdu?" (3_composition/texte/symboles/caracteres/symboles_manquants)
+% FAQuk:   "Where can I find the symbol for ..." (symbols)
+%   FAQfr: "Caractères" (3_composition/texte/symboles/caracteres/start)
 \newcommand*{\misssymb}[1]{%
   \faq{misssymb+symbols}{"Missing symbol commands" and \wheresym}{\strut$#1$}%
 }
@@ -1015,8 +1015,8 @@ alterum. Pro in \ae{}que deseruisse, has ei nulla mucius
 signiferumque. No efficiendi voluptatibus per. Nobis audiam urbanitas
 qui ea, esse nonummy pro ad.
 
-% FAQuk: "Code listings in LaTeX" (codelist)
-%   FAQfr: "" ()
+% FAQuk:   "Code listings in LaTeX" (codelist)
+%   FAQfr: "Comment insérer un code source dans un document?" (4_domaines_specialises/informatique/inserer_du_code_source_informatique)
 \bigskip
 \faq{codelist}{"Code listings in LaTeX"}{%
 \begin{minipage}{24em}
@@ -1037,8 +1037,8 @@ qui ea, esse nonummy pro ad.
 }
 \bigskip
 
-% FAQuk: "Marking changed parts of your document" (changebars)
-%   FAQfr: "" ()
+% FAQuk:   "Marking changed parts of your document" (changebars)
+%   FAQfr: "Comment afficher les modifications dans un document?" (3_composition/texte/document/signaler_des_changements_entre_versions)
 \newcommand*{\changebarfaq}[1]{%
   \faq{changebars}{"Marking changed parts of your document"}{#1}%
 }
@@ -1072,8 +1072,8 @@ lorem pellentesque, quisque integer nulla varius suspendisse. Non
 molestie eu convallis hymen\ae{}os, amet a, integer morbi inceptos
 ipsum in vulputate.
 
-% FAQuk: "Putting bibliography entries in text" (bibinline)
-%   FAQfr: "" ()
+% FAQuk:   "Putting bibliography entries in text" (bibinline)
+%   FAQfr: "Putting bibliography entries in text" (3_composition/annexes/bibliographie/inserer_les_references_biblio_dans_le_texte)
 \newlength{\fnwidth}
 \setlength{\fnwidth}{\linewidth}
 \addtolength{\fnwidth}{-15pt}
@@ -1093,8 +1093,8 @@ donec sapien erat sed ligula, non ut lacus porttitor.
 
 \medskip
 
-% FAQuk: "Parallel setting of text" (parallel)
-%   FAQfr: "" ()
+% FAQuk:   "Parallel setting of text" (parallel)
+%   FAQfr: "Comment obtenir des colonnes parallèles?" (3_composition/texte/pages/composer_des_paragraphes_en_vis_a_vis)
 \noindent
 \faq{parallel}{"Parallel setting of text"}{%
 \newcommand{\forceindent}{\hspace*{\defaultparindent}}%
@@ -1133,8 +1133,8 @@ donec sapien erat sed ligula, non ut lacus porttitor.
 
 \medskip
 
-% FAQuk: "Adjusting the presentation of section numbers" (seccntfmt)
-%   FAQfr: "" ()
+% FAQuk:   "Adjusting the presentation of section numbers" (seccntfmt)
+%   FAQfr: "Comment modifier la présentation de la numérotation des titres de sectionnement?" (3_composition/texte/titres/changer_la_presentation_des_numeros_de_sections)
 \makeatletter
 \let\orig@seccntformat=\@secccntformat
 \renewcommand*{\@seccntformat}[1]{%
@@ -1149,8 +1149,8 @@ donec sapien erat sed ligula, non ut lacus porttitor.
 \makeatother
 \pagestyle{fancybasic}
 
-% FAQuk: "LaTeX gets cross-references wrong" (crossref)
-%   FAQfr: "" ()
+% FAQuk:   "LaTeX gets cross-references wrong" (crossref)
+%   FAQfr: "Pourquoi ma référence croisée n'est pas correcte?" (3_composition/texte/renvois/les_references_croisees_sont_fausses)
 Deseruisse signiferumque duo ex. Ad eam temporibus comprehensam, ius
 no laboramus assueverit Table~\antifaq{crossref}{"LaTeX gets
 cross-references wrong"}{72\strut} eu Figure~\antifaq{crossref}{"LaTeX
@@ -1158,10 +1158,10 @@ gets cross-references wrong"}{32\strut} audire facilis eos. Modo
 legere noluisse ad sea, usu labore docendi corpora cu. Augue ignota te
 vel, aperiam periculis repudiare ad est.
 
-% FAQuk: "Diagonal separation in corner cells of tables" (slashbox)
-%   FAQfr: "" ()
-% FAQuk: "Merging cells in a column of a table" (multirow)
-%   FAQfr: "" ()
+% FAQuk:   "Diagonal separation in corner cells of tables" (slashbox)
+%   FAQfr: "Comment diviser une cellule par une diagonale?" (3_composition/tableaux/cellules/diviser_une_cellule_en_diagonale)
+% FAQuk:   "Merging cells in a column of a table" (multirow)
+%   FAQfr: "Merging cells in a column of a table" (3_composition/tableaux/cellules/fusionner_des_cellule_dans_une_colonne)
 \begin{table}[htbp]
   \centering
   \begin{tabular}{|l||c|c|c|}
@@ -1186,16 +1186,16 @@ vel, aperiam periculis repudiare ad est.
   \label{tbl:slashbox-multirow}
 \end{table}
 
-% FAQuk: "Why are my sections numbered 0.1 ...?" (zerochap)
-%   FAQfr: "" ()
+% FAQuk:   "Why are my sections numbered 0.1 ...?" (zerochap)
+%   FAQfr: "Pourquoi mes sections sont numérotées « 0.1 » et ainsi de suite?" (3_composition/texte/titres/pourquoi_les_numeros_de_sections_commencent_par_un_zero)
 \begingroup
 \makeatletter
 \newcommand*{\zerosecname}{Ius nonumy ceteros similique}
 \refstepcounter{subsection}
 %\mbox{}\vskip 3.5ex plus -1ex minus -.2ex
 \normalfont\large\bfseries
-\noindent
-\antifaq{zerochap}%
+\noindent\
+antifaq{zerochap}%
   {"Why are my sections numbered 0.1 ...?"}%
   {0.\arabic{subsection}\strut}\quad\zerosecname
 \renewcommand{\thesubsection}{0.\@arabic\c@subsection}
@@ -1206,29 +1206,29 @@ vel, aperiam periculis repudiare ad est.
 \makeatother
 \endgroup
 
-% FAQuk: "Typesetting all those TeX-related logos" (logos)
-%   FAQfr: "" ()
+% FAQuk:   "Typesetting all those TeX-related logos" (logos)
+%   FAQfr: "Comment obtenir les logos de TeX, LaTeX et compagnie?" (3_composition/texte/symboles/logos/logos-latex)
 \newcommand*{\logofaq}[1]{%
   \faq{logos}{"Typesetting all those TeX-related logos"}{#1\strut}%
 }
 \noindent
 Iaculis fusce dolor luctus, integer ultrices wisi. Pede et ut, aliquam
 tristique ipsum nulla, id sed etiam magna \logofaq{\TeX} pellentesque
-sit, ut eros. Blandit \logofaq{\LaTeX} nec eros, consectetuer ut proin
-\logofaq{\BibTeX} consectetuer cras, neque \logofaq{\AMSTeX} vehicula
+sit, ut eros. Blandit \logofaq{\LaTeX} nec eros, consectetuer ut proin\
+logofaq{\BibTeX} consectetuer cras, neque \logofaq{\AMSTeX} vehicula
 risus conubia magna. Pharetra magnis a \logofaq{\MF} ante sed, sit
 nibh lorem risus, congue id placerat nunc accusantium.
 
-% FAQuk: "Setting text ragged right" (ragright)
-%   FAQfr: "" ()
-% FAQuk: "Why does it ignore paragraph parameters?" (paraparam)
-%   FAQfr: "" ()
+% FAQuk:   "Setting text ragged right" (ragright)
+%   FAQfr: "Comment modifier l'alignement du texte?" (3_composition/texte/paragraphes/justifier_un_paragraphe_a_droite_ou_a_gauche)
+% FAQuk:   "Why does it ignore paragraph parameters?" (paraparam)
+%   FAQfr: "Pourquoi mon paramètre de paragraphe est-il ignoré?" (3_composition/texte/paragraphes/parametres_non_appliques_au_paragraphe)
 \newsavebox{\raggedbox}
 \begin{lrbox}{\raggedbox}
 \begin{minipage}{\linewidth}
 \setlength{\parindent}{\defaultparindent}%
-\begin{flushleft}
-\strut
+\begin{flushleft}\
+strut
 Etiam sagittis, dolor at lacinia volutpat, arcu sapien tincidunt nisl,
 ut blandit dolor tortor non augue. Etiam varius interdum
 pede. Suspendisse potenti. Pellentesque pharetra, nibh sed porttitor
@@ -1236,8 +1236,8 @@ hendrerit, quam lectus aliquet erat, quis adipiscing ligula odio et
 lorem. M\ae{}cenas pharetra feugiat nulla euismod consequat
 hymen\ae{}os id phasellus. Integer pretium eros auctor augue. Class
 aptent taciti sociosqu ad litora torquent per conubia nostra, per
-inceptos hymen\ae{}os. Id eget eros eleifend suscipit vestibulum,
-ligula odio viverra porta tortor turpis ac. Augue viverra vel, omnis
+inceptos hymen\ae{}os. Id eget eros eleifend suscipit vestibulum,l
+igula odio viverra porta tortor turpis ac. Augue viverra vel, omnis
 accumsan blandit nam orci vel dolor. Sollicitudin ut tincidunt
 imperdiet habitasse, erat gravida, curabitur ultrices, senectus
 elementum cras porta.\strut
@@ -1252,8 +1252,8 @@ elementum cras porta.\strut
     {"Setting text ragged right" and "Why does it ignore paragraph parameters?"}%
     {\makebox[9em]{\rule[-\dp\raggedbox+1ex]{0em}{\raggedtotalheight}}}\hspace*{6em}}%
 }
-% FAQuk: "Cancelling \ragged commands" (flushboth)
-%   FAQfr: "" ()
+% FAQuk:   "Cancelling \ragged commands" (flushboth)
+%   FAQfr: "Comment annuler l'effet des commandes '\raggedleft' et '\raggedright'?" (3_composition/texte/paragraphes/annuler_les_commandes_ragged)
 \begin{lrbox}{\raggedbox}
 \begin{minipage}[t]{\linewidth}
 \setlength{\parindent}{\defaultparindent}%
@@ -1273,8 +1273,8 @@ legere facete his ad.\strut
     {\makebox[9em]{\rule[-\dp\raggedbox+1ex]{0em}{\raggedtotalheight}}}\hspace*{6em}}%
 }
 
-% FAQuk: "Facing floats on 2-page spread" (dpfloat)
-%   FAQfr: "" ()
+% FAQuk:   "Facing floats on 2-page spread" (dpfloat)
+%   FAQfr: "Comment mettre des flottants sur des pages en vis-à-vis?" (3_composition/flottants/mettre_des_flottants_en_vis_a_vis)
 \begin{figure}[p]
   \begin{leftfullpage}
     \rule{1in+\hoffset+\oddsidemargin}{0pt}%
@@ -1303,10 +1303,10 @@ intellegebat eu. Cu ius sint tota patrioque, no eam nisl erant
 laoreet.  Alia temporibus eos cu. Posse mucius pro ex. No vis agam
 platonem.
 
-% FAQuk: "Merging cells in a column of a table" (multirow)
-%   FAQfr: "" ()
-% FAQuk: "Footnotes in tables" (footintab)
-%   FAQfr: "" ()
+% FAQuk:   "Merging cells in a column of a table" (multirow)
+%   FAQfr: "Merging cells in a column of a table" (3_composition/tableaux/cellules/fusionner_des_cellule_dans_une_colonne)
+% FAQuk:   "Footnotes in tables" (footintab)
+%   FAQfr: "Comment obtenir une note de bas de page dans un tableau?" (3_composition/tableaux/notes_de_bas_de_tableau)
 \begin{table}[htbp]
   \centering
   \newcommand{\rotbox}[1]{%
@@ -1337,8 +1337,8 @@ platonem.
   \label{tbl:multirow}
 \end{table}
 
-% FAQuk: "Controlling widows and orphans" (widows)
-%   FAQfr: "" ()
+% FAQuk:   "Controlling widows and orphans" (widows)
+%   FAQfr: "Comment éviter les lignes veuves ou orphelines?" (3_composition/texte/pages/eviter_les_veuves_et_les_orphelines)
 \newsavebox{\widowbox}
 \begin{lrbox}{\widowbox}
   \begin{minipage}{\linewidth}
@@ -1362,8 +1362,8 @@ rhoncus sociosqu aliquet leo platea nascetur \ae{}nean. Porta cras
 fusce rutrum integer luctus penatibus scelerisque metus convallis
 accumsan ornare cursus.
 
-% FAQuk: "Other 'document font' sizes?" (extsizes)
-%   FAQfr: "" ()
+% FAQuk:   "Other 'document font' sizes?" (extsizes)
+%   FAQfr: "Other 'document font' sizes?" (3_composition/texte/symboles/polices/comment_avoir_d_autres_tailles_de_police)
 \mbox{}\vskip 3.5ex plus -1ex minus -.2ex
 \noindent\faq{extsizes}{"Other 'document font' sizes?"}{%
 \begin{minipage}{\linewidth}
@@ -1394,8 +1394,8 @@ vix sanctus delicatissimi.
 
 \subsection{Mauris suscipit lectus}
 
-% FAQuk: "Flowing text around figures in LaTeX" (textflow)
-%   FAQfr: "" ()
+% FAQuk:   "Flowing text around figures in LaTeX" (textflow)
+%   FAQfr: "Comment habiller une image ou une citation avec du texte?" (3_composition/flottants/habiller_une_image_avec_du_texte)
 Ut blandit. In cursus, enim non luctus condimentum, mi quam rutrum
 nisi, nec feugiat orci sem eget mauris. Suspendisse ut metus sit amet
 libero pretium nec rutrum.
@@ -1444,8 +1444,8 @@ felis arcu vehicula tortor, non hendrerit metus ipsum a
 turpis. Aliquam sem velit, luctus sed, nonummy at, scelerisque sed,
 eros.
 
-% FAQuk: "'Watermarks' on every page" (watermark)
-%   FAQfr: "" ()
+% FAQuk:   "'Watermarks' on every page" (watermark)
+%   FAQfr: "Comment obtenir un filigrane sur toutes les pages?" (3_composition/texte/document/ajouter_un_filigrane_sur_chaque_page)
 \centergraphic[watermark]{"'Watermarks' on every page"}{watermark}
 \thispagestyle{fancynohyper}
 
@@ -1484,10 +1484,10 @@ aliquam, risus sed suscipit euismod, tellus mauris laoreet sem, eu
 tincidunt elit arcu sed tortor. Etiam sit amet nunc et eros gravida
 elementum.
 
-% FAQuk: "Page number is wrong at start of page" (wrongpn)
-%   FAQfr: "" ()
-% FAQuk: "Choosing a bibliography style" (whatbst)
-%   FAQfr: "" ()
+% FAQuk:   "Page number is wrong at start of page" (wrongpn)
+%   FAQfr: "Pourquoi un numéro de page courante peut être faux en haut de page?" (3_composition/texte/pages/numerotation_des_pages/le_numero_de_page_est_incorrect)
+% FAQuk:   "Choosing a bibliography style" (whatbst)
+%   FAQfr: "Choosing a bibliography style" (3_composition/annexes/bibliographie/choisir_un_style_de_bibliographie)
 Cras suscipit lectus a magna. Cras massa leo, viverra sit amet, auctor
 nec, ultricies quis, pede. Mauris blandit metus id enim. Proin
 malesuada. Mauris consectetuer. Proin sit amet est. \AE{}nean luctus
@@ -1508,8 +1508,8 @@ sapien. Proin viverra pede nec justo. Donec suscipit. Phasellus
 egestas tortor sit amet sem. M\ae{}cenas dignissim malesuada
 lectus. Vestibulum ullamcorper aliquam nulla.
 
-% FAQuk: "Putting things at fixed positions on the page" (abspos)
-%   FAQfr: "" ()
+% FAQuk:   "Putting things at fixed positions on the page" (abspos)
+%   FAQfr: "Comment mettre des éléments à une position donnée sur une page?" (3_composition/texte/pages/positionner_un_objet_de_facon_absolue_sur_la_page)
 \newlength{\logoxoffset}
 \newlength{\logoyoffset}
 \thispagestyle{fancynohyper}
@@ -1529,8 +1529,8 @@ lectus. Vestibulum ullamcorper aliquam nulla.
   }
 }
 
-% FAQuk: "Typesetting things in landscape orientation" (landscape)
-%   FAQfr: "" ()
+% FAQuk:   "Typesetting things in landscape orientation" (landscape)
+%   FAQfr: "Comment changer l'orientation de tout ou partie d'un document?" (3_composition/texte/pages/changer_l_orientation_d_un_document)
 \begin{table}[htbp]
   \centering
   \faq{landscape}{"Typesetting things in landscape orientation"}{%
@@ -1561,8 +1561,8 @@ lectus. Vestibulum ullamcorper aliquam nulla.
   \label{tbl:sideways}
 \end{table}
 
-% FAQuk: "Repeated graphics in a document" (repeatgrf)
-%   FAQfr: "" ()
+% FAQuk:   "Repeated graphics in a document" (repeatgrf)
+%   FAQfr: "Comment insérer plusieurs fois une image dans un document?" (3_composition/illustrations/repeter_une_image_dans_un_document)
 \begin{figure}
   \centering
   \newcommand{\replogobox}{%
@@ -1574,8 +1574,8 @@ lectus. Vestibulum ullamcorper aliquam nulla.
 \end{figure}
 
 
-% FAQuk: "Really blank pages between chapters" (reallyblank)
-%   FAQfr: "" ()
+% FAQuk:   "Really blank pages between chapters" (reallyblank)
+%   FAQfr: "Comment supprimer les en-têtes et bas de page de pages vierges?" (3_composition/texte/pages/supprimer_l_en-tete_et_le_pied_d_une_page_blanche)
 \clearpage
 \null
 \thispagestyle{empty}
@@ -1587,8 +1587,8 @@ lectus. Vestibulum ullamcorper aliquam nulla.
 }
 \clearpage
 
-% FAQuk: "Changing the margins in LaTeX" (changemargin)
-%   FAQfr: "" ()
+% FAQuk:   "Changing the margins in LaTeX" (changemargin)
+%   FAQfr: "Comment redéfinir les marges d'un document?" (3_composition/texte/pages/modifier_les_marges_d_un_document)
 \mbox{}\vskip 3.5ex plus -1ex minus -.2ex
 \newsavebox{\chngmargbox}
 \begin{lrbox}{\chngmargbox}
@@ -1641,8 +1641,8 @@ dolore, qui vero, nulla suscipit qui.
   \rule{0pt}{\ht\chngmargbox}%
   \rule{\chngmarglen}{0pt}}
 
-% FAQuk: "My section title is too wide for the page header" (runheadtoobig)
-%   FAQfr: "" ()
+% FAQuk:   "My section title is too wide for the page header" (runheadtoobig)
+%   FAQfr: "Comment réduire les rappels de titres dans un haut ou bas de page?" (3_composition/texte/pages/raccourcir_les_rappels_de_titres_en_haut_de_page)
 \subsection[Te lorem blandit]{%
   \faq{runheadtoobig}%
     {"My section title is too wide for the page header"}%
@@ -1652,8 +1652,8 @@ dolore, qui vero, nulla suscipit qui.
       lectus hymen\ae{}os gravida class mauris}}%
 }
 
-% FAQuk: "How to create crop marks" (crop)
-%   FAQfr: "" ()
+% FAQuk:   "How to create crop marks" (crop)
+%   FAQfr: "Comment tracer des hirondelles?" (3_composition/divers/hirondelles)
 \newsavebox{\cropulc}
 \savebox{\cropulc}{%
 \begin{picture}(40,40)(-35,-5)
@@ -1720,14 +1720,14 @@ dolore, qui vero, nulla suscipit qui.
     \put(\LenToUnit{\pageminusmargin},10){\cropfaq{\usebox{\croplrc}}}}
 }
 
-% FAQuk: "Books relevant to TeX and friends" (book-lists)
-%   FAQfr: "" ()
-% FAQuk: "(La)TeX tutorials" (tutbitslatex)
-%   FAQfr: "" ()
-% FAQuk: "Online introductions: LaTeX" (man-latex)
-%   FAQfr: "" ()
-% FAQuk: "Freely available (La)TeX books" (ol-books)
-%   FAQfr: "" ()
+% FAQuk:   "Books relevant to TeX and friends" (book-lists)
+%   FAQfr: "Livres sur TeX et compagnie" (1_generalites/documentation/livres/start)
+% FAQuk:   "(La)TeX tutorials" (tutbitslatex)
+%   FAQfr: "Où trouver des tutoriels sur (La)TeX?" (1_generalites/documentation/documents/tutoriels/tutoriaux)
+% FAQuk:   "Online introductions: LaTeX" (man-latex)
+%   FAQfr: "Où trouver des introductions à LaTeX?" (1_generalites/documentation/documents/tutoriels/initiations_a_latex_sur_internet)
+% FAQuk:   "Freely available (La)TeX books" (ol-books)
+%   FAQfr: "Documentations en ligne" (1_generalites/documentation/documents/start)
 \begin{figure}[tbp]
   \centering
   \faq{book-lists+tutbitslatex+man-latex+ol-books}
@@ -1740,10 +1740,10 @@ dolore, qui vero, nulla suscipit qui.
   \label{fig:book-montage}
 \end{figure}
 
-% FAQuk: "Labelling graphics" (labelfig)
-%   FAQfr: "" ()
-% FAQuk: "Footnotes in captions" (ftncapt)
-%   FAQfr: "" ()
+% FAQuk:   "Labelling graphics" (labelfig)
+%   FAQfr: "Labelling graphics" (3_composition/illustrations/annoter_un_graphique)
+% FAQuk:   "Footnotes in captions" (ftncapt)
+%   FAQfr: "Comment obtenir une note de bas de page dans une légende?" (3_composition/texte/footnotes/inserer_une_note_de_bas_de_page_dans_une_legende)
 \begin{figure}[tbp]
   \centering
   \begin{minipage}{5in}
@@ -1785,8 +1785,8 @@ dolore, qui vero, nulla suscipit qui.
   \end{minipage}
 \end{figure}
 
-% FAQuk: "Only one \baselineskip per paragraph" (baselinepar)
-%   FAQfr: "" ()
+% FAQuk:   "Only one \baselineskip per paragraph" (baselinepar)
+%   FAQfr: "Comment contourner la limite d'un unique '\baselineskip' par paragraphe?" (3_composition/texte/paragraphes/un_seul_baselineskip_par_paragraphe)
 \begingroup
 Facilisi consequat te veniam commodo volutpat et ut feugait iriure
 consequat vel.  Ut pr\ae{}sent exerci ut, pr\ae{}sent duis te, vel
@@ -1832,8 +1832,8 @@ ipsum non phasellus feugiat faucibus bibendum imperdiet, pulvinar
 posuere nisl. Blandit vestibulum montes duis ridiculus suscipit
 volutpat ut egestas ultricies:
 
-% FAQuk: "Including a file verbatim in LaTeX" (verbfile)
-%   FAQfr: "" ()
+% FAQuk:   "Including a file verbatim in LaTeX" (verbfile)
+%   FAQfr: "Including a file verbatim in LaTeX" (4_domaines_specialises/informatique/inclure_un_fichier_en_mode_verbatim)
 \newsavebox{\verbfilebox}
 \begin{lrbox}{\verbfilebox}
 \begin{minipage}{\widthof{\texttt{sit discere detraxit, eam nulla omnium id.~~Homero grXaecXXiX~}}}
@@ -1870,10 +1870,10 @@ percipit insolens eum et, ne vim vidit dolorum. Vim
 gr\ae{}ci maiorum te, movet vivendo his ut, mel debitis
 lobortis accommodare in.
 
-% FAQuk: "Including line numbers in typeset output" (linenos)
-%   FAQfr: "" ()
-% FAQuk: "Where have my characters gone?" (misschar)
-%   FAQfr: "" ()
+% FAQuk:   "Including line numbers in typeset output" (linenos)
+%   FAQfr: "Comment numéroter les lignes d'un document?" (3_composition/texte/lignes/numeroter_les_lignes_d_un_document)
+% FAQuk:   "Where have my characters gone?" (misschar)
+%   FAQfr: "Pourquoi mes caractères n'apparaissent pas?" (3_composition/texte/symboles/caracteres/mes_caracteres_ont_disparu)
 \noindent
 \smash{\makebox[0pt][r]{%
   \faq{linenos}{"Including line numbers in typeset output"}{%
@@ -1909,8 +1909,8 @@ eu est autem blandit. Melius feugiat suscipiantur nec an.
 
 \subsection{Ornatus takimata}
 
-% FAQuk: "Breaking boxes of text" (breakbox)
-%   FAQfr: "" ()
+% FAQuk:   "Breaking boxes of text" (breakbox)
+%   FAQfr: "Comment scinder des boîtes de texte?" (3_composition/texte/pages/couper_des_boites)
 \begin{brokenfaqbox}
 \setlength{\parindent}{\defaultparindent}
 
@@ -1948,8 +1948,8 @@ eu. Vis at eius audire laboramus, unum exerci et sea.
 
 \subsection{Has libris efficiendi omittantur}
 
-% FAQuk: "The style of section headings" (secthead)
-%   FAQfr: "" ()
+% FAQuk:   "The style of section headings" (secthead)
+%   FAQfr: "Comment modifier le style des titres de sectionnement?" (3_composition/texte/titres/modifier_le_style_des_titres)
 \newsavebox{\indentparbox}
 \begin{lrbox}{\indentparbox}
 \begin{minipage}[b]{\linewidth-1.5cm}
@@ -1961,8 +1961,8 @@ disputationi ne. Mediocrem dissentiunt eu his. Affert consetetur
 consequuntur no usu. Per esse sale detracto ei, ad diam deleniti
 efficiendi mea. Nobis voluptatum et nec, eos justo quodsi oblique an.
 
-% FAQuk: "Case-changing oddities" (casechange)
-%   FAQfr: "" ()
+% FAQuk:   "Case-changing oddities" (casechange)
+%   FAQfr: "Comment convertir des majuscules en minuscules et inversement?" (3_composition/texte/symboles/changer_la_casse)
 Nam ad appetere imperdiet deseruisse. Probatus senserit no quo, ea
 debitis invenire eam \antifaq{casechange}{"Case-changing
 oddities"}{\uppercase{quidam ph\ae{}drum $f(x)=ax^2+bx+c$ salutandi}}
@@ -1986,16 +1986,16 @@ democritum interpretaris, te vim doctus lobortis, sed et fuisset
 mandamus aliquando. Adhuc paulo reformidans usu id. Sed nullam
 explicari deterruisset:
 
-% FAQuk: "Typesetting music in TeX" (music)
-%   FAQfr: "" ()
+% FAQuk:   "Typesetting music in TeX" (music)
+%   FAQfr: "Comment écrire de la musique sous LaTeX?" (4_domaines_specialises/musique/ecrire_de_la_musique)
 \begin{center}
   \faq{music}{"Typesetting music in TeX"}{\includegraphics{musixtex}}
 \end{center}
 
-% FAQuk: "Floats on their own on float pages" (floatpages)
-%   FAQfr: "" ()
-% FAQuk: "Vertical layout of float pages" (vertposfp)
-%   FAQfr: "" ()
+% FAQuk:   "Floats on their own on float pages" (floatpages)
+%   FAQfr: "Comment isoler un flottant sur une page à part?" (3_composition/flottants/positionnement/faire_une_page_de_flottants)
+% FAQuk:   "Vertical layout of float pages" (vertposfp)
+%   FAQfr: "Comment changer l'agencement vertical des pages de flottants?" (3_composition/flottants/composition_verticale_d_une_page_de_flottants)
 \begin{figure}[p]
   \centering
   \newcommand{\pagefigcapt}{Morbi justo at pretium eleifend diam}
@@ -2017,8 +2017,8 @@ explicari deterruisset:
 }
 \makeatother
 
-% FAQuk: "The comma as a decimal separator" (dec_comma)
-%   FAQfr: "" ()
+% FAQuk:   "The comma as a decimal separator" (dec_comma)
+%   FAQfr: "Comment faire de la virgule le séparateur décimal?" (3_composition/langues/utiliser_la_virgule_comme_separateur_decimal)
 \newcommand*{\commafaq}[1]{%
   \faq{dec_comma}{"The comma as a decimal separator"}{#1\strut}%
 }
@@ -2033,8 +2033,8 @@ volutpat in hac habitasse platea dictumst. Aliquam turpis leo, sodales
 nec, gravida eu, feugiat dapibus, libero.  Quisque sed nulla id tellus
 euismod consequat.
 
-% FAQuk: "Roman theorems" (theoremfmt)
-%   FAQfr: "" ()
+% FAQuk:   "Roman theorems" (theoremfmt)
+%   FAQfr: "Comment obtenir un texte de théorème en caractères romains?" (4_domaines_specialises/mathematiques/ecrire_les_theoremes_en_romain)
 \newtheorem{preromantheorem}{Theorem}
 \newenvironment{romantheorem}[1][]{%
   \begin{preromantheorem}[#1]
@@ -2056,12 +2056,12 @@ euismod consequat.
 \end{minipage}
 }
 
-% FAQuk: "Proof environment" (proof)
-%   FAQfr: "" ()
-% FAQuk: "Defining a new log-like function in LaTeX" (newfunction)
-%   FAQfr: "" ()
-% FAQuk: "Cancelling terms in maths expressions" (cancellation)
-%   FAQfr: "" ()
+% FAQuk:   "Proof environment" (proof)
+%   FAQfr: "Comment ajouter un carré en fin de démonstration?" (4_domaines_specialises/mathematiques/symboles/symbole_cqfd)
+% FAQuk:   "Defining a new log-like function in LaTeX" (newfunction)
+%   FAQfr: "Defining a new log-like function in LaTeX" (4_domaines_specialises/mathematiques/definir_un_nouvel_operateur)
+% FAQuk:   "Cancelling terms in maths expressions" (cancellation)
+%   FAQfr: "Comment biffer des termes dans une expression mathématique?" (4_domaines_specialises/mathematiques/barrer_des_termes)
 \begin{proof}
 \renewcommand{\qed}{\quad\faq{proof}{"Proof
 environment"}{\strut\rule{5pt}{5pt}}} Donec nunc turpis, scelerisque
@@ -2103,8 +2103,8 @@ sapien.
 
 \bigskip
 
-% FAQuk: "Adjusting maths font sizes" (mathsize)
-%   FAQfr: "" ()
+% FAQuk:   "Adjusting maths font sizes" (mathsize)
+%   FAQfr: "Adjusting maths font sizes" (4_domaines_specialises/mathematiques/tailles_de_fonte_en_mode_mathematique)
 \noindent
 \faq{mathsize}{"Adjusting maths font sizes"}{%
   \begin{minipage}{\linewidth}
@@ -2122,8 +2122,8 @@ dignissim. Nulla facilisi, phasellus sapien enim, placerat id, posuere
 eu, porta eget, risus. Quisque nisi pr\ae{}sent nibh urna, dapibus eu,
 pretium vit\ae{} sollicitudin et nunc,
 
-% FAQuk: "Re-using an equation" (reuseq)
-%   FAQfr: "" ()
+% FAQuk:   "Re-using an equation" (reuseq)
+%   FAQfr: "Comment numéroter les équations?" (4_domaines_specialises/mathematiques/numeroter_les_equations)
 \begin{equation}
 \alpha \leq \int_m^{\log_2 m} K^{*}(z)\:\text{d}z < \beta \:,
 \tag{\faq{reuseq}{"Re-using an equation"}{\hypergetref{eq:repeatable}\strut}}
@@ -2135,8 +2135,8 @@ hendrerit ligula. Nam mattis pellentesque odio. Suspendisse ornare
 aliquet tortor. Duis placerat euismod quam. Curabitur commodo volutpat
 sem. Fusce enim tellus, congue a, luctus eget, tempus et, felis.
 
-% FAQuk: "Ellipses" (mathlips)
-%   FAQfr: "" ()
+% FAQuk:   "Ellipses" (mathlips)
+%   FAQfr: "Comment obtenir des points de suspension?" (4_domaines_specialises/mathematiques/points_de_suspension_mathematiques)
 \newcommand*{\ellipsesfaq}[1]{\faq{mathlips}{"Ellipses"}{\ensuremath{#1}}}
 \begin{equation}
 \newcommand*{\fcdots}{\ellipsesfaq{\cdots}}
@@ -2170,8 +2170,8 @@ n & n+1 & n+2 & \fcdots & 2n-1 \\
 \right)
 \end{equation}
 
-% FAQuk: "Line-breaking in in-line maths" (brkinline)
-%   FAQfr: "" ()
+% FAQuk:   "Line-breaking in in-line maths" (brkinline)
+%   FAQfr: "Line-breaking in in-line maths" (4_domaines_specialises/mathematiques/coupures_de_lignes_en_mode_mathematique)
 Ornare mi convallis commodo et nulla, dapibus sollicitudin iaculis
 diam curabitur aut volutpat, odio pellentesque sed posuere ipsum donec
 lacinia. Adipiscing tellus dolor ut \antifaq{brkinline}{"Line-breaking
@@ -2183,12 +2183,12 @@ adipiscing laoreet donec sit, pede quam duis ullamcorper lorem pede
 molestie, blandit cras libero quis egestas id, id pulvinar in integer
 vivamus vit\ae{} integer.
 
-% FAQuk: "Extra vertical space in floats" (vertspacefloat)
-%   FAQfr: "" ()
-% FAQuk: "Spacing lines in tables" (struttab)
-%   FAQfr: "" ()
-% FAQuk: "Automatic sizing of minipage" (varwidth)
-%   FAQfr: "" ()
+% FAQuk:   "Extra vertical space in floats" (vertspacefloat)
+%   FAQfr: "Comment supprimer l'espace en trop autour des flottants?" (3_composition/flottants/trop_d_espace_dans_un_flottant)
+% FAQuk:   "Spacing lines in tables" (struttab)
+%   FAQfr: "Spacing lines in tables" (3_composition/tableaux/lignes/augmenter_la_largeur_des_lignes_d_un_tableau)
+% FAQuk:   "Automatic sizing of minipage" (varwidth)
+%   FAQfr: "Comment optimiser la largeur d'une minipage?" (3_composition/texte/paragraphes/ajuster_la_taille_d_une_minipage)
 \begin{table}[htp]
   \centering
   \antifaq{vertspacefloat}{"Extra vertical space in floats"}{\makebox[\linewidth]{\strut}}
@@ -2213,8 +2213,8 @@ convallis possimus cum nunc, commodo erat enim id tempor tortor, diam
 id gravida quis lacinia leo volutpat, malesuada in eget ultrices
 vit\ae{} volutpat aspernatur:
 
-% FAQuk: "Tables longer than a single page" (longtab)
-%   FAQfr: "" ()
+% FAQuk:   "Tables longer than a single page" (longtab)
+%   FAQfr: "Comment composer des tableaux de plus d'une page?" (3_composition/tableaux/tableau_sur_plusieurs_pages)
 \newsavebox{\partialtabular}
 \newcounter{romnum}
 \begin{center}
@@ -2289,14 +2289,14 @@ vit\ae{} volutpat aspernatur:
 \end{mpsupertabular}
 \end{center}
 
-% FAQuk: "My words aren't being hyphenated" (nohyph)
-%   FAQfr: "" ()
-% FAQuk: "Hyphenation exceptions" (hyphexcept)
-%   FAQfr: "" ()
-% FAQuk: "Weird hyphenation of words" (weirdhyphen)
-%   FAQfr: "" ()
-% FAQuk: "(Merely) peculiar hyphenation" (oddhyphen)
-%   FAQfr: "" ()
+% FAQuk:   "My words aren't being hyphenated" (nohyph)
+%   FAQfr: "La césure ne fonctionne pas !" (3_composition/langues/cesure/la_cesure_ne_fonctionne_pas)
+% FAQuk:   "Hyphenation exceptions" (hyphexcept)
+%   FAQfr: "Hyphenation exceptions" (3_composition/langues/cesure/nouveaux_motifs_de_cesure)
+% FAQuk:   "Weird hyphenation of words" (weirdhyphen)
+%   FAQfr: "Weird hyphenation of words" (3_composition/langues/cesure/cesures_bizarres3)
+% FAQuk:   "(Merely) peculiar hyphenation" (oddhyphen)
+%   FAQfr: "Comment gérer des règles de césures spécifiques?" (3_composition/langues/cesure/cesures_bizarres)
 Ullamcorper penatibus morbi nulla arcu luctus, phasellus nullam
 consequat quam fusce curabitur, auctor integer felis neque
 \antifaq{nohyph+hyphexcept}{"My words aren't being hyphenated" and
@@ -2315,10 +2315,10 @@ mei. Vis ei vocent urbanitas duis nominati honestatis vel.
 Pellentesque sollicitudin urna eget nulla. Nulla imperdiet
 sollicitudin leo. Phasellus odio. Nam scelerisque dolor ut mi.
 
-% FAQuk: "How to alter the alignment of tabular cells" (tabcellalign)
-%   FAQfr: "" ()
-% FAQuk: "How to change a whole row of a table" (wholerow)
-%   FAQfr: "" ()
+% FAQuk:   "How to alter the alignment of tabular cells" (tabcellalign)
+%   FAQfr: "Comment modifier l'alignement du texte dans une seule cellule?" (3_composition/tableaux/cellules/modifier_l_alignement_du_texte_dans_une_cellule)
+% FAQuk:   "How to change a whole row of a table" (wholerow)
+%   FAQfr: "Comment changer le style d'une ligne entière dans un tableau?" (3_composition/tableaux/lignes/changer_la_fonte_d_une_ligne)
 \begin{table}[tbp]
   \centering
   \begin{tabular}{|l|l|p{12pc}|}
@@ -2358,8 +2358,8 @@ sollicitudin leo. Phasellus odio. Nam scelerisque dolor ut mi.
   \label{tbl:centercell}
 \end{table}
 
-% FAQuk: "The thickness of rules in LaTeX tables" (rulethk)
-%   FAQfr: "" ()
+% FAQuk:   "The thickness of rules in LaTeX tables" (rulethk)
+%   FAQfr: "Comment modifier l'épaisseur des traits dans les tableaux?" (3_composition/tableaux/filets/epaisseur_des_lignes)
 \begin{table}[tbp]
   \centering
   \setlength{\arrayrulewidth}{3pt}
@@ -2375,10 +2375,10 @@ sollicitudin leo. Phasellus odio. Nam scelerisque dolor ut mi.
   \label{tbl:thicklines}
 \end{table}
 
-% FAQuk: "Preventing hyphenation of a particular word" (wdnohyph)
-%   FAQfr: "" ()
-% FAQuk: "Stopping all hyphenation" (hyphoff)
-%   FAQfr: "" ()
+% FAQuk:   "Preventing hyphenation of a particular word" (wdnohyph)
+%   FAQfr: "Preventing hyphenation of a particular word" (3_composition/langues/cesure/empecher_la_cesure_de_certains_mots)
+% FAQuk:   "Stopping all hyphenation" (hyphoff)
+%   FAQfr: "Stopping all hyphenation" (3_composition/langues/cesure/desactiver_completement_la_cesure)
 Vel eu modus simul iriure, mei cu unum nominavi, eos postea
 \faq{wdnohyph+hyphoff}{"Preventing hyphenation of a particular word"
 and "Stopping all
@@ -2387,10 +2387,10 @@ facer movet usu ne, facilis qualisque ne mei. Decore gr\ae{}cis
 verterem at qui. An ceteros voluptua consectetuer sed, te ius accumsan
 posidonium, pro ei quis principes.
 
-% FAQuk: "Repeating a command n times" (repeat-num)
-%   FAQfr: "" ()
-% FAQuk: "Repeating something for each 'thing' in a set" (repeat-set)
-%   FAQfr: "" ()
+% FAQuk:   "Repeating a command n times" (repeat-num)
+%   FAQfr: "Repeating a command _n_ times" (2_programmation/syntaxe/repeter_une_commande_n_fois)
+% FAQuk:   "Repeating something for each 'thing' in a set" (repeat-set)
+%   FAQfr: "Repeating something for each 'thing' in a set" (2_programmation/syntaxe/repeter_une_commande_pour_chaque_element_d_une_liste)
 \begingroup
 \setlength{\parfillskip}{0pt}%
 Fusce commodo leo eu tortor tempor mollis. Phasellus eros diam,
@@ -2427,8 +2427,8 @@ tincidunt.  Sed vulputate nunc a nulla vulputate, ac rutrum
 \endgroup
 enim sem, interdum vit\ae{} magna sed.  Curabitur euismod faucibus.
 
-% FAQuk: "Version control using RCS, CVS or the like" (RCS)
-%   FAQfr: "" ()
+% FAQuk:   "Version control using RCS, CVS or the like" (RCS)
+%   FAQfr: "Gestion de versions avec RCS, CVS ou équivalent" (3_composition/texte/document/inclure_des_informations_venant_d_un_gestionnaire_de_versions)
 \begin{center}
 \faq{RCS}%
   {"Version control using RCS, CVS or Subversion"}%
@@ -2437,8 +2437,8 @@ enim sem, interdum vit\ae{} magna sed.  Curabitur euismod faucibus.
 
 \clearpage
 
-% FAQuk: "How to change LaTeX's 'fixed names'" (fixnam)
-%   FAQfr: "" ()
+% FAQuk:   "How to change LaTeX's 'fixed names'" (fixnam)
+%   FAQfr: "Comment changer les textes prédéfinis de LaTeX?" (3_composition/langues/traduire_le_titre_de_table_des_matieres_ou_bibliographie)
 \renewcommand{\refname}{Voluptatibus}
 \let\origthebibliography=\thebibliography
 \makeatletter
@@ -2464,16 +2464,16 @@ enim sem, interdum vit\ae{} magna sed.  Curabitur euismod faucibus.
 \makeatother
 
 \begin{thebibliography}{9}
-% FAQuk: "Accents in bibliographies" (bibaccent)
-%   FAQfr: "" ()
+% FAQuk:   "Accents in bibliographies" (bibaccent)
+%   FAQfr: "Comment obtenir des accents dans une bibliographie?" (3_composition/annexes/bibliographie/accents_dans_les_bibliographies)
 \bibitem{accents}
 Numquam Deserunt.
 \newblock Minimum \faq{bibaccent}{"Accents in
 bibliographies"}{r\'e\c{c}\"us\`ab\H{o}} salutandi pro cu.
 \newblock In \emph{Ei Usu Inermis Veritus Evertitur}, 1995.
 
-% FAQuk: "Format of numbers in the bibliography" (formbiblabel)
-%   FAQfr: "" ()
+% FAQuk:   "Format of numbers in the bibliography" (formbiblabel)
+%   FAQfr: "Comment changer le format des références numériques dans la bibliographie" (3_composition/annexes/bibliographie/formats_des_references_numeriques_dans_les_bibliographies)
 \makeatletter
 \let\orig@biblabel=\@biblabel
 \renewcommand*{\@biblabel}[1]{%
@@ -2486,8 +2486,8 @@ Choro Fabellas, Modus Consetetur, and Homero D. Invenire.
 \let\@biblabel=\orig@biblabel
 \makeatother
 
-% FAQuk: "Capitalisation in BibTeX" (capbibtex)
-%   FAQfr: "" ()
+% FAQuk:   "Capitalisation in BibTeX" (capbibtex)
+%   FAQfr: "Comment conserver les majuscules dans les titres?" (3_composition/annexes/bibliographie/conserver_les_majuscules_dans_les_titres)
 \newcommand*{\captitlefaq}[1]{%
   \faq{capbibtex}{"Capitalisation in BibTeX"}{#1\strut}%
 }
@@ -2497,16 +2497,16 @@ Duis Indoctum and Primis Qu\ae{}stio.
   \captitlefaq{M}ei \captitlefaq{N}o \captitlefaq{A}utem.
 \newblock \emph{Vituperata Signiferumque}, 7(12), December 1981.
 
-% FAQuk: "Transcribed initials in BibTeX" (bibtranscinit)
-%   FAQfr: "" ()
+% FAQuk:   "Transcribed initials in BibTeX" (bibtranscinit)
+%   FAQfr: "Multi-letter initials in BibTeX" (3_composition/annexes/bibliographie/initiales_multiples_avec_bibtex)
 \bibitem{initials}
 \faq{bibtranscinit}{"Transcribed initials in BibTeX"}{Yu.\strut} Iriure and
 \faq{bibtranscinit}{"Transcribed initials in BibTeX"}{Ya.\strut} Porrov.
 \newblock Mei recteque: Sententi\ae{} ad error essent.
 \newblock \emph{Meis Iriure Molesti\ae}, volume~25, Winter~2001.
 
-% FAQuk: "References from the bibliography to the citation" (backref)
-%   FAQfr: "" ()
+% FAQuk:   "References from the bibliography to the citation" (backref)
+%   FAQfr: "Comment référencer les pages contenant des citations?" (3_composition/annexes/bibliographie/referencer_les_pages_d_appel_d_une_reference_bibliographique)
 \bibitem{backref}\label{cite:backref}
 Ridens Laboramus, Congue Nominati Adolescens, Quidam S. Constituto,
   and Ullum Honestatis.
@@ -2516,8 +2516,8 @@ Ridens Laboramus, Congue Nominati Adolescens, Quidam S. Constituto,
   citation"}{Pages~\hypergetpageref{backbackref1},
   \hypergetpageref{backbackref2}, \hypergetpageref{backbackref3}}.
 
-% FAQuk: "Non-english bibliographies" (i18nbib)
-%   FAQfr: "" ()
+% FAQuk:   "Non-english bibliographies" (i18nbib)
+%   FAQfr: "Non-english bibliographies" (3_composition/annexes/bibliographie/bibliographies_internationales)
 \newcommand{\foreign}[1]{%
   \faq{i18nbib}{"Non-english bibliographies"}{\usefont{U}{psy}{m}{n}#1\strut}%
 }
@@ -2530,8 +2530,8 @@ Congue Magna, Duo Cu, \foreign{and} Mucius Veritus.
   \foreign{part}~2, \foreign{pages}~189--201, Has Consectetuer, Ut
   Esse, 3rd~\foreign{edition}, \foreign{November}~1986.
 
-% FAQuk: "Choosing a bibliography style" (whatbst)
-%   FAQfr: "" ()
+% FAQuk:   "Choosing a bibliography style" (whatbst)
+%   FAQfr: "Choosing a bibliography style" (3_composition/annexes/bibliographie/choisir_un_style_de_bibliographie)
 \makeatletter
 \let\orig@biblabel=\@biblabel
 \renewcommand*{\@biblabel}[1]{%
@@ -2549,8 +2549,8 @@ Choro Fabellas, Modus Consetetur, and Homero D. Invenire.
 \let\@biblabel=\orig@biblabel
 \makeatother
 
-% FAQuk: "Multiple citations" (mcite)
-%   FAQfr: "" ()
+% FAQuk:   "Multiple citations" (mcite)
+%   FAQfr: "Multiple citations" (3_composition/annexes/bibliographie/references_biblio_multiples)
 \bibitem{multicite}
 \faq{mcite}{"Multiple citations"}{\parbox[t]{\linewidth}{%
 Paulo Omittam, Vocent A. Fugit, Mentitum Ponderum, and Vero Lorem
@@ -2562,8 +2562,8 @@ Mediocritatem,
 \newblock Sumo Detraxit,
 \newblock Sonet Inimicus Hendrerit~\textbf{31} (1972)~1126.}}
 
-% FAQuk: "Creating a bibliography style" (custbib)
-%   FAQfr: "" ()
+% FAQuk:   "Creating a bibliography style" (custbib)
+%   FAQfr: "Creating a bibliography style" (3_composition/annexes/bibliographie/creer_un_style_de_bibliographie)
 \bibitem{custbib}
 \faq{custbib}{"Creating a bibliography style"}{\parbox[t]{\linewidth}{\strut
   Platonem,~F, JR Cotidieque, C~Dolore, et al.~(1979).
@@ -2573,8 +2573,8 @@ Mediocritatem,
   \newblock ISBN:~0130388858; DOI:~10.1007/b99409,
   URL:~\nolinkurl{http://www.pakin.org/~scott}.}}
 
-% FAQuk: "BibTeX sorting and name prefixes" (bibprefixsort)
-%   FAQfr: "" ()
+% FAQuk:   "BibTeX sorting and name prefixes" (bibprefixsort)
+%   FAQfr: "BibTeX sorting and name prefixes" (3_composition/annexes/bibliographie/trier_des_noms_avec_prefixes)
 \bibitem{name-prefix}
 \faq{bibprefixsort}%
   {"BibTeX sorting and name prefixes"}%
@@ -2583,16 +2583,16 @@ P. Aperiam, and S. Sensibus.
 \newblock Per debet aperiri urbanitas ne.
 \newblock In \emph{Sit at Soleat Nullam Gr\ae{}ci}, April--May, 1997.
 
-% FAQuk: "Reducing spacing in the bibliography" (compactbib)
-%   FAQfr: "" ()
+% FAQuk:   "Reducing spacing in the bibliography" (compactbib)
+%   FAQfr: "Comment compacter une bibliographie?" (3_composition/annexes/bibliographie/compacter_une_bibliographie)
 \vspace*{-3ex}%
 \faq{compactbib}%
   {"Reducing spacing in the bibliography"}%
   {\rule{\linewidth}{0pt}}%
 \vspace*{-3ex}%
 
-% FAQuk: "URLs in BibTeX bibliographies" (citeURL)
-%   FAQfr: "" ()
+% FAQuk:   "URLs in BibTeX bibliographies" (citeURL)
+%   FAQfr: "URLs in BibTeX bibliographies" (Comment citer une URL avec BibTeX?)
 \bibitem{normal}
 Agam Prima,  Congue Everti, and Appetere Facilisis.
 \newblock Suas eros melius id mel.
@@ -2602,8 +2602,8 @@ Agam Prima,  Congue Everti, and Appetere Facilisis.
     {"URLs in BibTeX bibliographies"}%
     {\nolinkurl{http://www.ctan.org/pkg/visualFAQ}}
 
-% FAQuk: "URLs in BibTeX bibliographies" (citeURL)
-%   FAQfr: "" ()
+% FAQuk:   "URLs in BibTeX bibliographies" (citeURL)
+%   FAQfr: "Comment citer une URL avec BibTeX?" (3_composition/annexes/bibliographie/citer_une_url)
 \bibitem{urls}
 \faq{citeURL}%
   {"URLs in BibTeX bibliographies"}%
@@ -2612,8 +2612,8 @@ Agam Prima,  Congue Everti, and Appetere Facilisis.
 
 \bigskip
 
-% FAQuk: "Multiple bibliographies?" (multbib)
-%   FAQfr: "" ()
+% FAQuk:   "Multiple bibliographies?" (multbib)
+%   FAQfr: "Multiple bibliographies?" (3_composition/annexes/bibliographie/plusieurs_bibliographies_dans_un_document)
 \let\thebibliography=\origthebibliography
 \noindent
 \faq{multbib}{"Multiple bibliographies?"}{%
@@ -2649,8 +2649,8 @@ ne. Vel et labitur comprehensam. Risus ac nibh nisl ultrices minus
 facilisis, cum rhoncus tristique urna blandit magnis lobortis, eget
 integer justo culpa lacus aliquet.
 
-% FAQuk: "All the files used by this document" (filesused)
-%   FAQfr: "" ()
+% FAQuk:   "All the files used by this document" (filesused)
+%   FAQfr: "Comment connaître les versions des fichiers utilisées dans un document?" (5_fichiers/obtenir_la_liste_des_fichiers_utilises)
 \newsavebox{\filelistapdx}
 \begin{lrbox}{\filelistapdx}
 \begin{minipage}{\linewidth}
@@ -2780,10 +2780,10 @@ essent lucilius eum.
 
 \bigskip
 
-% FAQuk: "Appendixes" (appendix)
-%   FAQfr: "" ()
-% FAQuk: "Balancing columns at the end of a document" (balance)
-%   FAQfr: "" ()
+% FAQuk:   "Appendixes" (appendix)
+%   FAQfr: "Annexes" (3_composition/annexes/start)
+% FAQuk:   "Balancing columns at the end of a document" (balance)
+%   FAQfr: "Comment équilibrer les colonnes de texte en fin de document?" (3_composition/texte/pages/equilibrer_les_colonnes)
 %\noindent
 %\begin{minipage}{\linewidth}
 \begin{multicols}{2}
@@ -2841,10 +2841,10 @@ lectus id nostra porta suspendisse sem duis. Lectus, porttitor lectus.
 }
 %\end{minipage}
 
-% FAQuk: "How to ask a question" (askquestion)
-%   FAQfr: "" ()
-% FAQuk: "How to make a 'minimum example'" (minxampl)
-%   FAQfr: "" ()
+% FAQuk:   "How to ask a question" (askquestion)
+%   FAQfr: "Comment poser une question?" (1_generalites/documentation/listes_de_discussion/comment_poser_une_question)
+% FAQuk:   "How to make a 'minimum example'" (minxampl)
+%   FAQfr: "Comment faire un 'exemple minimal'?" (1_generalites/documentation/listes_de_discussion/comment_faire_un_exemple_complet_minimal)
 \begin{figure}[bp]
   \centering
   \setlength{\unitlength}{1pt}
@@ -2872,8 +2872,8 @@ lectus id nostra porta suspendisse sem duis. Lectus, porttitor lectus.
     }
 \end{figure}
 
-% FAQuk: "Generating an index in (La)TeX" (makeindex)
-%   FAQfr: "" ()
+% FAQuk:   "Generating an index in (La)TeX" (makeindex)
+%   FAQfr: "Quelles sont les commandes de base pour créer un index?" (3_composition/annexes/index/commandes_de_base)
 \bigskip
 \makeatletter
 \newif\ifscan@allowed
@@ -2891,8 +2891,8 @@ lectus id nostra porta suspendisse sem duis. Lectus, porttitor lectus.
 
 \null\vskip 3.5ex plus -1ex minus -.2ex\null
 
-% FAQuk: "Multiple indexes" (multind)
-%   FAQfr: "" ()
+% FAQuk:   "Multiple indexes" (multind)
+%   FAQfr: "Comment générer plusieurs index?" (3_composition/annexes/index/generer_plusieurs_index)
 \noindent
 \faq{multind}{"Multiple indexes"}{%
   \begin{minipage}{\linewidth}
@@ -2900,8 +2900,8 @@ lectus id nostra porta suspendisse sem duis. Lectus, porttitor lectus.
   \end{minipage}%
 }
 
-% FAQuk: "A 'report' from lots of 'article's" (multidoc)
-%   FAQfr: "" ()
+% FAQuk:   "A 'report' from lots of 'article's" (multidoc)
+%   FAQfr: "Comment constituer un recueil d'articles à partir de plusieurs documents sources?" (3_composition/texte/document/compiler_des_articles_en_un_seul_documents)
 \clearpage
 \null
 \thispagestyle{empty}
@@ -2913,8 +2913,8 @@ lectus id nostra porta suspendisse sem duis. Lectus, porttitor lectus.
       {\rule{0pt}{\paperheight}\rule{\paperwidth}{0pt}}}
 }
 
-% FAQuk: "Moving tables and figures in LaTeX" (floats)
-%   FAQfr: "" ()
+% FAQuk:   "Moving tables and figures in LaTeX" (floats)
+%   FAQfr: "Comment gérer proprement les flottants dans LaTeX?" (3_composition/flottants/pourquoi_faire_flotter_ses_figures_et_tableaux)
 \begin{figure}[p]
   \centering
   \antifaq{floats}{"Moving tables and figures in LaTeX"}{\usebox{\logobox}}
