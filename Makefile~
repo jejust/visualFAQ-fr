@@ -7,16 +7,16 @@ DIST_SOURCES = \
 	anotherarticle.pdf \
 	book-montage.png \
 	fuzzytext.pdf \
-#	labelgraph.pdf \
-#	lorem-ipsum-left.jpg \
-#	lorem-ipsum-right.jpg \
-#	lorem-ipsum.jpg \
+	labelgraph.pdf \
+	lorem-ipsum-left.jpg \
+	lorem-ipsum-right.jpg \
+	lorem-ipsum.jpg \
 	musixtex.png \
 	visfaq-html.png \
 	visualFAQ.ind \
 	visualFAQ.ind2 \
-	visualFAQ.tex
-#	watermark.pdf
+	visualFAQ.tex \
+	watermark.pdf
 
 BOOKLIST = \
 	lamport.jpg \
@@ -46,12 +46,12 @@ anotherarticle.dvi: anotherarticle.tex
 anotherarticle.eps: anotherarticle.dvi
 	dvips -E -o anotherarticle.eps anotherarticle.dvi
 
-#watermark.eps: watermark.odg
-#	libreoffice --headless --convert-to eps watermark.odg
-#	perl -i -ne 'BEGIN {chomp($$bbox=`gs -q -sDEVICE=bbox -dNOPAUSE -dBATCH watermark.eps 2>&1`)} s/^\%\%BoundingBox.*/$$bbox/; print' watermark.eps
+watermark.eps: watermark.odg
+	libreoffice --headless --convert-to eps watermark.odg
+	perl -i -ne 'BEGIN {chomp($$bbox=`gs -q -sDEVICE=bbox -dNOPAUSE -dBATCH watermark.eps 2>&1`)} s/^\%\%BoundingBox.*/$$bbox/; print' watermark.eps
 
-#labelgraph.eps labelgraph.tex: labelgraph.gp
-#	gnuplot labelgraph.gp -e 'set term epslatex col solid size 5,3 linewidth 2; set output "labelgraph.eps"; replot'
+labelgraph.eps labelgraph.tex: labelgraph.gp
+	gnuplot labelgraph.gp -e 'set term epslatex col solid size 5,3 linewidth 2; set output "labelgraph.eps"; replot'
 
 book-montage.png: $(addprefix latex-books/,$(BOOKLIST))
 	montage -geometry 191x245+0+0 -tile 4x2 $(addprefix latex-books/,$(BOOKLIST)) book-montage.png
@@ -62,17 +62,17 @@ fuzzytext.dvi: fuzzytext.tex
 fuzzytext.eps: fuzzytext.dvi
 	dvips -E -P ibmvga -o fuzzytext.eps fuzzytext.dvi
 
-#lorem-ipsum.jpg: lorem-ipsum-0001.png
-#	convert -trim lorem-ipsum-0001.png -quality '85%' lorem-ipsum.jpg
+lorem-ipsum.jpg: lorem-ipsum-0001.png
+	convert -trim lorem-ipsum-0001.png -quality '85%' lorem-ipsum.jpg
 
-#lorem-ipsum-0001.png: lorem-ipsum.blend
-#	blender -b lorem-ipsum.blend -o //lorem-ipsum- -F PNG -x 1 -f 1
+lorem-ipsum-0001.png: lorem-ipsum.blend
+	blender -b lorem-ipsum.blend -o //lorem-ipsum- -F PNG -x 1 -f 1
 
-#lorem-ipsum-left.jpg: lorem-ipsum.jpg
-#	convert -crop 1556x1799+0+0 lorem-ipsum.jpg lorem-ipsum-left.jpg
+lorem-ipsum-left.jpg: lorem-ipsum.jpg
+	convert -crop 1556x1799+0+0 lorem-ipsum.jpg lorem-ipsum-left.jpg
 
-#lorem-ipsum-right.jpg: lorem-ipsum.jpg
-#	convert -crop 1556x1799+1556+0 lorem-ipsum.jpg lorem-ipsum-right.jpg
+lorem-ipsum-right.jpg: lorem-ipsum.jpg
+	convert -crop 1556x1799+1556+0 lorem-ipsum.jpg lorem-ipsum-right.jpg
 
 troubleshoot-vlf.pdf: troubleshoot-vlf.tex
 	pdflatex troubleshoot-vlf.tex
@@ -98,9 +98,9 @@ clean:
 	$(RM) anotherarticle.aux anotherarticle.dvi anotherarticle.eps
 	$(RM) anotherarticle.log anotherarticle.pdf
 	$(RM) watermark.eps watermark.pdf
-#	$(RM) labelgraph.tex labelgraph.eps labelgraph.tex
+	$(RM) labelgraph.tex labelgraph.eps labelgraph.tex
 	$(RM) book-montage.png
 	$(RM) fuzzytext.aux fuzzytext.dvi fuzzytext.log
 	$(RM) fuzzytext.eps fuzzytext.pdf
-#	$(RM) lorem-ipsum-0001.png lorem-ipsum.jpg
-#	$(RM) lorem-ipsum-left.jpg lorem-ipsum-right.jpg
+	$(RM) lorem-ipsum-0001.png lorem-ipsum.jpg
+	$(RM) lorem-ipsum-left.jpg lorem-ipsum-right.jpg
