@@ -4,41 +4,58 @@
                         |___/ |_| \___/|_| (_)
 
 
-There is nothing in this directory that is of use to the average LaTeX
-user.
+Il n'y a rien dans ce répertoire qui soit utile à l'utilisateur normal
+de LaTeX.
 
-    If you want to associate     ---\  download the cooltooltips
-    pop-up windows and tooltips  ---/  package from CTAN.
-    with hyperlinks
+    Si vous voulez associer      ---\  téléchargez l'extension
+    des notes contextuelles et   ---/  "cooltooltips" du CTAN.
+    des infobulles
+    à des hyperliens
 
-    If you want to see a code    ---\  read the documentation for
-    example for a particular     ---/  whatever package the FAQ
-    FAQ answer                         answer recommends.
 
-    If you want to rebuild       ---\  don't bother; the content has
-    the Visual LaTeX FAQ for     ---/  been laid out manually and the
-    whatever reason                    PDF file has been postprocessed
+    Si vous voulez voir un       ---\  lisez la documentation
+    exemple de code pour une     ---/  de l'extension recommandée
+    réponse particulière               dans la réponse de la FAQ.
+    de la FAQ.
 
-The source to the Visual LaTeX FAQ necessarily has to utilize a number
-of crude hacks and is more often than not a demonstration of how *not*
-to achieve a particular effect.  First, a lot of trickery is involved
-in wrapping hyperlinks around typesetting examples: If you can't put
-something in an \fbox and have it look right then you can't easily put
-a hyperlink around it, either.  Second, some packages exhibit
-contradictory functionality.  For example, parskip.sty sets the
-paragraph indent to zero for all paragraphs while indentfirst.sty sets
-the paragraph indent to a nonzero value for all paragraphs.  Clearly,
-a LaTeX file can't meaningfully load both packages.
 
-The visualFAQ.pdf file on CTAN has been postprocessed to include page
-thumbnails and to support "Fast Web View" (a.k.a. Linearized PDF).
-Rebuilding the PDF will lose that metadata.  Changes to the document,
-including formatting changes, are also not recommended.  Because of
-the extensive use of unbreakable TeX boxes the document is very
-sensitive to layout.  Any change is likely to cause ugly slabs of
-inter- and intra-paragraph whitespace to appear throughout the
-document.
+    Si vous voulez recompiler    ---\  Ne vous embêtez pas ;
+    la FAQ pour une raison       ---/  son contenu a été mis en page
+    quelconque.                        manuellement et le fichier PDF
+                                       a été post-traité.
+
+
+Le code-source de la FAQ LaTeX Visuelle doit nécessairement utiliser
+un certain nombre d'astuces grossières et constitue le plus souvent
+une illustration de la mauvaise façon de faire les choses. Par exemple,
+l'insertion d'hyperliens autour d'exemples de mise en page demande pas
+mal d'astuces: si vous ne pouvez pas mettre quelque chose dans une
+"\fbox" et obtenir un résultat correct, vous ne pourrez pas non plus
+mettre facilement un lien hypertexte autour. Ensuite, certaines
+extensions ont des fonctionnalités contradictoires. Un exemple:
+"parskip.sty" fixe l'indentation de tous les paragraphe à zéro alors
+que "indentfirst.sty" fixe l'indentation de tous les paragraphes
+à une valeur non nulle. Il est clair qu'un fichier LaTeX n'a aucun
+intérêt à charger les deux extensions en même temps.
+
+Le fichier "visualFAQ.pdf" sur le CTAN a été post-traité pour inclure
+des vignettes des pages et pour supporter le mode "Fast Web View"
+(aussi appelé "PDF linéarisé"). La recompilation du PDF entraînera
+la perte de ces métadonnées.  Il est également déconseillé de modifier
+le document, y compris sa mise en forme.  En raison de l'utilisation
+intensive de boîtes TeX insécables, le document est très sensible
+à la mise en page.  Toute modification risque d'entraîner l'apparition
+de vilains espaces blancs inter et intra-paragraphes dans tout
+le document.
+
 
 In short, you're best off using the Visual LaTeX FAQ as it was
 intended: Browse through the prebuilt visualFAQ.pdf file, click on
 hyperlinks of interest, and learn from what the UK TeX FAQ has to say.
+
+En bref, la meilleure façon d'utiliser la FAQ LaTeX Visuelle est de
+la prendre comme elle est, de parcourir le fichier "visualFAQ.pdf",
+de cliquer sur les hyperliens qui vous intéressent et d'apprendre
+ce que la FAQ LaTeX francophone a à vous dire.
+
+               https://faq.gutenberg.eu.org/

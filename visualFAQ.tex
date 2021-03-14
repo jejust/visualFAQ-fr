@@ -1,22 +1,25 @@
 %%
-%%                     WHY ARE YOU READING THIS FILE?
+%%                   POURQUOI LISEZ-VOUS CE FICHIER ?
 %%
-%% If you're looking for code examples for a particular typesetting
-%% effect then you're looking in the wrong place.  The source to the
-%% Visual LaTeX FAQ necessarily has to utilize a number of crude hacks
-%% and is more often than not a demonstration of how *not* to achieve a
-%% particular effect.  First, a lot of trickery is involved in wrapping
-%% hyperlinks around typesetting examples: If you can't put something in
-%% an \fbox and have it look right then you can't easily put a hyperlink
-%% around it, either.  Second, some packages exhibit contradictory
-%% functionality.  For example, parskip.sty sets the paragraph indent to
-%% zero for all paragraphs while indentfirst.sty sets the paragraph
-%% indent to a nonzero value for all paragraphs.  Clearly, a LaTeX file
-%% can't meaningfully load both packages.
+%% Si vous cherchez des exemples de code pour obtenir un effet de mise
+%% en page particulier, vous ne cherchez pas au bon endroit.  Le code-
+%% source de la FAQ LaTeX Visuelle doit nécessairement utiliser un
+%% certain nombre d'astuces grossières et constitue le plus souvent une
+%% illustration de la mauvaise manière de faire les choses. Par exemple,
+%% l'insertion d'hyperliens autour d'exemples de mise en page demande pas
+%% mal d'astuces: si vous ne pouvez pas mettre quelque chose dans une
+%% "\fbox" et obtenir un résultat correct, alors vous ne pourrez pas non
+%% plus mettre facilement un lien hypertexte autour. Ensuite, certaines
+%% extensions ont des fonctionnalités contradictoires. Un exemple:
+%% "parskip.sty" fixe l'indentation de tous les paragraphe à zéro alors
+%% que "indentfirst.sty" fixe l'indentation de tous les paragraphes
+%% à une valeur non nulle. Il est clair qu'un fichier LaTeX n'a aucun
+%% intérêt à charger les deux extensions en même temps.
 %%
-%% The best way to get answers to typesetting questions is to browse
-%% through the prebuilt visualFAQ.pdf file, click on hyperlinks of
-%% interest, and learn from what the UK TeX FAQ has to say.
+%% La meilleure façon d'obtenir des réponses à vos questions sur la mise
+%% en page est de parcourir le fichier PDF "visualFAQ.pdf" généré pour
+%% vous, de cliquer sur les liens hypertextes qui vous intéressent et
+%% d'apprendre ce que la FAQ LaTeX francophone a à vous dire.
 %%
 \documentclass[twoside,letterpaper]{article}
 \usepackage{etex}
@@ -108,16 +111,18 @@
 
 % Until the UK TeX FAQ restores support for links of the form
 % "label=A+B", truncate a URL at the first "+".
-\def\flhelper#1+#2!!!{#1}
-\newcommand{\firstlabel}[1]{\flhelper#1+!!!}
+%      (Not used in French version)
+%\def\flhelper#1+#2!!!{#1}
+%\newcommand{\firstlabel}[1]{\flhelper#1+!!!}
 
 % Define a shortcut for hyperlinks to the UK TeX FAQ.
 \newsavebox{\faqbox}
 \DeclareRobustCommand{\faq}[3]{%
   \begin{lrbox}{\faqbox}#3\end{lrbox}%
   \cooltooltip[0 1 0]{FAQ}{#2}%
-    {http://www.tex.ac.uk/cgi-bin/texfaq2html?label=\firstlabel{#1}}%
-    {http://www.tex.ac.uk/.../#1}%
+%    {http://www.tex.ac.uk/cgi-bin/texfaq2html?label=\firstlabel{#1}}%
+    {https://faq.gutenberg.eu.org/#1}%
+    {https://faq.gutenberg.eu.org/#1}%
     {\usebox{\faqbox}}%
 }
 
@@ -126,8 +131,9 @@
 \DeclareRobustCommand{\antifaq}[3]{%
   \begin{lrbox}{\faqbox}#3\end{lrbox}%
   \cooltooltip[1 0 0]{FAQ}{#2}%
-    {http://www.tex.ac.uk/cgi-bin/texfaq2html?label=\firstlabel{#1}}%
-    {http://www.tex.ac.uk/.../#1}%
+%    {http://www.tex.ac.uk/cgi-bin/texfaq2html?label=\firstlabel{#1}}%
+    {https://faq.gutenberg.eu.org/#1}%
+    {https://faq.gutenberg.eu.org/#1}%
     {\usebox{\faqbox}}%
 }
 
@@ -184,15 +190,19 @@
 \fancypagestyle{fancybasic}{%
   \fancyhf{}
   \fancyhead[LO,RE]{%
-    \faq{fancyhdr}{"Alternative head- and footlines in LaTeX"}{%
+    \faq{3_composition/texte/pages/composer_des_en-tetes_et_pieds_de_page}{"Comment définir les hauts et bas de page?"}{%
       \usefont{T1}{pzc}{m}{it}\leftmark}}
   \fancyhead[LE,RO]{%
-    \faq{fancyhdr}{"Alternative head- and footlines in LaTeX"}{%
+    \faq{3_composition/texte/pages/composer_des_en-tetes_et_pieds_de_page}{"Comment définir les hauts et bas de page?"}{%
       \usefont{T1}{pzc}{m}{it}\rightmark}}
-  \cfoot{%
-    \faq{nofm+howmanypp}%
-      {"Page numbering '<n> of <m>'" and "How many pages are there in my document?"}%
-      {Page~\thepage\ of~\pageref*{LastPage}}\strut}
+  \fancyfoot[CE]{%
+    \faq{3_composition/texte/pages/numerotation_des_pages/numeroter_les_pages_avec_k_sur_n}%
+      {"Comment obtenir la numérotation 'page <K> sur <N>'?"}%
+      {Page~\thepage\ de~\pageref*{LastPage}}\strut}
+  \fancyfoot[CO]{%
+    \faq{3_composition/texte/document/combien_de_pages_a_mon_document}%
+      {"Comment compter le nombre de pages d'un document?"}%
+      {Page~\thepage\ de~\pageref*{LastPage}}\strut}
 }
 \pagestyle{fancybasic}
 
@@ -203,8 +213,8 @@
 \fancypagestyle{fancyaltpagenum}{%
   \cfoot{%
     \setcounter{pageofsection}{\thepage-\thesectionfirstpage+1}%
-    \faq{pagebychap}%
-      {"Page numbering by chapter"}%
+    \faq{3_composition/texte/pages/numerotation_des_pages/numeroter_les_pages_par_chapitre}%
+      {"Comment réinitialiser la numérotation des pages à chaque chapitre?"}%
       {\Roman{section}--\thepageofsection\strut}%
   }%
 }
@@ -304,7 +314,8 @@
 \savebox{\logobox}{\includegraphics[height=3cm]{lorem-ipsum}}
 
 % We use the text "Where can I find the symbol for ..." in a number of places.
-\newcommand*{\wheresym}{"Where can I find the symbol for ..."}
+%\newcommand*{\wheresym}{"Where can I find the symbol for ..."}
+\newcommand*{\wheresym}{"O\`u puis-je trouver le symbole de..."}
 
 % Draw slightly bolder hyperlink borders than the default.
 \setlength{\fboxrule}{1.5pt}
@@ -322,8 +333,11 @@
   \fcolorbox{red}{yellow}{%
     \small
     \begin{tabular}[t]{l}
-      This document uses PDF popups, which may cause problems for some PDF \\
-      viewers. Click here to enable/disable the popup mechanism document-wide.
+%      This document uses PDF popups, which may cause problems for some PDF \\
+%      viewers. Click here to enable/disable the popup mechanism document-wide.
+       Ce document utilise des note contextuelles PDF, ce qui peut poser probl\`eme\\
+       \`a certains visualisateurs de PDF.\\
+       Cliquez ici pour activer ou désactiver le m\' ecanisme des popups dans tout le document.
     \end{tabular}%
   }%
 }
@@ -338,19 +352,19 @@
 % FAQuk:   "The style of document titles" (titlsty)
 %   FAQfr: "Comment modifier le style des titres de sectionnement?" (3_composition/texte/titres/modifier_le_style_des_titres)
 \noindent
-\faq{titlsty}{"The style of document titles"}{%
+\faq{3_composition/texte/titres/modifier_le_style_des_titres}{"Comment modifier le style des titres de sectionnement?"}{%
   \begin{minipage}{\linewidth}
   \rule{\linewidth}{3pt}\par
   \vspace*{4ex}%
   \noindent{\fontsize{36}{43}\usefont{OT1}{phv}{b}{n}The Visual \LaTeX{} FAQ}
   \vspace*{4ex}
-  \begin{flushright}
+  \begin{flushleft}
   \large\usefont{OT1}{pnc}{m}{n}
-  Scott Pakin\par
-  {\small\textit{scott+vfaq@pakin.org}}\par
+  Scott Pakin\hspace{\fill}Adaptation fran\c{c}aise: J\'er\'emy Just\par
+  {\small\textit{scott+vfaq@pakin.org}}\hspace{\fill}{\small\textit{jeremy@jejust.fr}}\par
   \vspace*{3ex}
   \today
-  \end{flushright}
+  \end{flushleft}
   \rule{\linewidth}{3pt}
   \end{minipage}
 }
