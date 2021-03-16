@@ -28,11 +28,11 @@ FAQfr: "Comment redéfinir les marges d'un document?" (3_composition/texte/pages/
 FAQuk: "Big letters at the start of a paragraph" (dropping)
 FAQfr: "Comment mettre en valeur la première lettre d'un paragraphe?" (3_composition/texte/titres/commencer_un_paragraphe_par_une_lettrine)
 
-FAQuk: "Changing the space between letters" (letterspace)
-FAQfr: "Comment modifier l'espacement entre caractères?" (3_composition/texte/mots/modifier_l_espacement_entre_les_caracteres)
-
 FAQuk: "Realistic quotes for verbatim listings" (upquot)
 FAQfr: "Comment avoir des guillemets réalistes dans du code en verbatim?" (4_domaines_specialises/informatique/vrais_guillemets_en_mode_verbatim)
+
+FAQuk: "Changing the space between letters" (letterspace)
+FAQfr: "Comment modifier l'espacement entre caractères?" (3_composition/texte/mots/modifier_l_espacement_entre_les_caracteres)
 
 FAQuk: "What's the name of this file" (filename)
 FAQfr: "Comment afficher le nom du fichier compilé?" (3_composition/texte/document/utiliser_le_nom_de_fichier_dans_le_document)
@@ -52,11 +52,11 @@ FAQfr: "Comment obtenir un symbole copyright, trademark ou registered?" (3_compo
 FAQuk: "Where can I find the symbol for ..." (symbols)
 FAQfr: "Caractères" (3_composition/texte/symboles/caracteres/start)
 
-FAQuk: "How to change LaTeX's 'fixed names'" (fixnam)
-FAQfr: "Comment changer les textes prédéfinis de LaTeX?" (3_composition/langues/traduire_le_titre_de_table_des_matieres_ou_bibliographie)
-
 FAQuk: "Numbers too large in table of contents, etc." (tocloftwrong)
 FAQfr: "Comment faire si les numéros dépassent de la table des matières?" (3_composition/annexes/tables/nombres_trop_grands_dans_la_table_des_matieres)
+
+FAQuk: "How to change LaTeX's 'fixed names'" (fixnam)
+FAQfr: "Comment changer les textes prédéfinis de LaTeX?" (3_composition/langues/traduire_le_titre_de_table_des_matieres_ou_bibliographie)
 
 FAQuk: "The format of the Table of Contents, etc." (tocloft)
 FAQfr: "Comment changer le style de la table des matières?" (3_composition/annexes/tables/changer_le_style_de_la_table_des_matieres)
