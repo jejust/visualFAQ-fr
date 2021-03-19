@@ -116,7 +116,7 @@ FAQuk: "Sub- and superscript positioning for operators" (limits)
 FAQfr: "Comment positionner les limites des grands opérateurs?" (4_domaines_specialises/mathematiques/changer_la_position_des_limites_autour_des_sommes_et_integrales)
 
 FAQuk: "Set specifications and Dirac brackets" (braket)
-FAQfr: "Set specifications and Dirac brackets" (4_domaines_specialises/mathematiques/symboles_de_separateurs)
+FAQfr: "Comment écrire les bra-kets de Dirac ou une spécification d'ensemble?" (4_domaines_specialises/mathematiques/symboles_de_separateurs)
 
 FAQuk: "Text inside maths" (mathstext)
 FAQfr: "Text inside maths" (4_domaines_specialises/mathematiques/composer_du_texte_en_mode_mathematique)
@@ -407,16 +407,13 @@ FAQuk: "Multiple citations" (mcite)
 FAQfr: "Multiple citations" (3_composition/annexes/bibliographie/references_biblio_multiples)
 
 FAQuk: "Creating a bibliography style" (custbib)
-FAQfr: "Creating a bibliography style" (3_composition/annexes/bibliographie/creer_un_style_de_bibliographie)
+FAQfr: "Comment créer mon style de bibliographie?" (3_composition/annexes/bibliographie/creer_un_style_de_bibliographie)
 
 FAQuk: "BibTeX sorting and name prefixes" (bibprefixsort)
 FAQfr: "BibTeX sorting and name prefixes" (3_composition/annexes/bibliographie/trier_des_noms_avec_prefixes)
 
 FAQuk: "Reducing spacing in the bibliography" (compactbib)
 FAQfr: "Comment compacter une bibliographie?" (3_composition/annexes/bibliographie/compacter_une_bibliographie)
-
-FAQuk: "URLs in BibTeX bibliographies" (citeURL)
-FAQfr: "URLs in BibTeX bibliographies" (Comment citer une URL avec BibTeX?)
 
 FAQuk: "URLs in BibTeX bibliographies" (citeURL)
 FAQfr: "Comment citer une URL avec BibTeX?" (3_composition/annexes/bibliographie/citer_une_url)
