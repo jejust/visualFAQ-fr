@@ -23,15 +23,15 @@ The source to the Visual LaTeX FAQ necessarily has to utilize a number
 of crude hacks and is more often than not a demonstration of how *not*
 to achieve a particular effect.  First, a lot of trickery is involved
 in wrapping hyperlinks around typesetting examples: If you can't put
-something in an \fbox and have it look right then you can't easily put
+something in an `\fbox` and have it look right then you can't easily put
 a hyperlink around it, either.  Second, some packages exhibit
-contradictory functionality.  For example, parskip.sty sets the
-paragraph indent to zero for all paragraphs while indentfirst.sty sets
+contradictory functionality.  For example, `parskip.sty` sets the
+paragraph indent to zero for all paragraphs while `indentfirst.sty` sets
 the paragraph indent to a nonzero value for all paragraphs.  Clearly,
 a LaTeX file can't meaningfully load both packages.
 
-The visualFAQ.pdf file on CTAN has been postprocessed to include page
-thumbnails and to support "Fast Web View" (a.k.a. Linearized PDF).
+The `visualFAQ-fr.pdf` file on CTAN has been postprocessed to include
+page thumbnails and to support "Fast Web View" (a.k.a. Linearized PDF).
 Rebuilding the PDF will lose that metadata.  Changes to the document,
 including formatting changes, are also not recommended.  Because of
 the extensive use of unbreakable TeX boxes the document is very
@@ -40,7 +40,8 @@ inter- and intra-paragraph whitespace to appear throughout the
 document.
 
 In short, you're best off using the Visual LaTeX FAQ as it was
-intended: Browse through the prebuilt visualFAQ.pdf file, click on
-hyperlinks of interest, and learn from what the UK TeX FAQ has to say.
+intended: Browse through the prebuilt `visualFAQ-fr.pdf` file, click on
+hyperlinks of interest, and learn from what the French-speaking LaTeX
+FAQ has to say.
 
-                     https://texfaq.org/
+                   https://faq.gutenberg.eu.org/

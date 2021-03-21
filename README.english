@@ -16,13 +16,15 @@ an innovative new search interface that presents over a hundred
 typeset samples of frequently requested document formatting.  Simply
 click on a hyperlinked piece of text that matches what you want to
 achieve -- or what you want to prevent -- and the Visual LaTeX FAQ
-will send your Web browser to the appropriate page in the UK TeX FAQ.
+will send your Web browser to the appropriate page in the
+French-speaking LaTeX FAQ.
 
 I'm deeply grateful to Scott Pakin for sharing his source files, even
 before releasing them publicly, and allowing me to translate his work
 to French.
-The English original package is available at:
-                https://ctan.org/pkg/visualfaq
+The English original package, containing links to the UK TeX FAQ is
+available at:
+               https://ctan.org/pkg/visualFAQ
 
 Caveat
 ======
@@ -30,7 +32,7 @@ Caveat
 The Visual LaTeX FAQ makes extensive use of PDF hyperlinks to Web
 pages.  Unfortunately, not every PDF viewer supports this type of
 hyperlink and even those viewers that do may need to be configured to
-launch a Web browser.  The troubleshoot-vlf.pdf document is intended
+launch a Web browser.  The `troubleshoot-vlf-fr.pdf` document is intended
 to help troubleshoot problems with hyperlinks in the Visual LaTeX FAQ.
 Follow the instructions in that document to help determine why
 hyperlinks aren't working on your system.

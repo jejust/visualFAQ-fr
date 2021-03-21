@@ -30,15 +30,15 @@ un certain nombre d'astuces grossières et constitue le plus souvent
 une illustration de la mauvaise façon de faire les choses. Par exemple,
 l'insertion d'hyperliens autour d'exemples de mise en page demande pas
 mal d'astuces: si vous ne pouvez pas mettre quelque chose dans une
-"\fbox" et obtenir un résultat correct, vous ne pourrez pas non plus
+`\fbox` et obtenir un résultat correct, vous ne pourrez pas non plus
 mettre facilement un lien hypertexte autour. Ensuite, certaines
 extensions ont des fonctionnalités contradictoires. Un exemple:
-"parskip.sty" fixe l'indentation de tous les paragraphe à zéro alors
-que "indentfirst.sty" fixe l'indentation de tous les paragraphes
+`parskip.sty` fixe l'indentation de tous les paragraphe à zéro alors
+que `indentfirst.sty` fixe l'indentation de tous les paragraphes
 à une valeur non nulle. Il est clair qu'un fichier LaTeX n'a aucun
 intérêt à charger les deux extensions en même temps.
 
-Le fichier "visualFAQ.pdf" sur le CTAN a été post-traité pour inclure
+Le fichier `visualFAQ-fr.pdf` sur le CTAN a été post-traité pour inclure
 des vignettes des pages et pour supporter le mode "Fast Web View"
 (aussi appelé "PDF linéarisé"). La recompilation du PDF entraînera
 la perte de ces métadonnées.  Il est également déconseillé de modifier
@@ -50,11 +50,11 @@ le document.
 
 
 In short, you're best off using the Visual LaTeX FAQ as it was
-intended: Browse through the prebuilt visualFAQ.pdf file, click on
+intended: Browse through the prebuilt `visualFAQ-fr.pdf` file, click on
 hyperlinks of interest, and learn from what the UK TeX FAQ has to say.
 
 En bref, la meilleure façon d'utiliser la FAQ LaTeX Visuelle est de
-la prendre comme elle est, de parcourir le fichier "visualFAQ.pdf",
+la prendre comme elle est, de parcourir le fichier `visualFAQ-fr.pdf`,
 de cliquer sur les hyperliens qui vous intéressent et d'apprendre
 ce que la FAQ LaTeX francophone a à vous dire.
 

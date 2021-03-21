@@ -30,7 +30,7 @@ La FAQ LaTeX visuelle fait un usage intensif d'hyperliens PDF vers des
 pages Web.  Malheureusement, tous les visualisateurs de PDF ne supportent
 pas ce type d'hyperliens et même ceux qui le font doivent généralement
 être configurés pour lancer un navigateur Web.  Le document
-`troubleshoot-vlf.pdf` est destiné à aider à résoudre les problèmes
+`troubleshoot-vlf-fr.pdf` est destiné à aider à résoudre les problèmes
 liés aux hyperliens dans la FAQ LaTeX visuelle.
 Suivez les instructions de ce document pour déterminer pourquoi les
 hyperliens ne fonctionnent pas sur votre système.
@@ -46,7 +46,7 @@ links to the French-speaking FAQ, hosted at:
 
 See file `README.english` for more information in English, and of course
 the English original package at:
-                https://ctan.org/pkg/visualfaq
+                https://ctan.org/pkg/visualFAQ
 
 
 I'm deeply grateful to Scott Pakin for sharing his source files, even
