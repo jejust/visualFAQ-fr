@@ -221,7 +221,7 @@ FAQuk: "Controlling widows and orphans" (widows)
 FAQfr: "Comment éviter les lignes veuves ou orphelines?" (3_composition/texte/pages/eviter_les_veuves_et_les_orphelines)
 
 FAQuk: "Other 'document font' sizes?" (extsizes)
-FAQfr: "Other 'document font' sizes?" (3_composition/texte/symboles/polices/comment_avoir_d_autres_tailles_de_police)
+FAQfr: "Comment avoir d'autres tailles de police de base?" (3_composition/texte/symboles/polices/comment_avoir_d_autres_tailles_de_police)
 
 FAQuk: "Flowing text around figures in LaTeX" (textflow)
 FAQfr: "Comment habiller une image ou une citation avec du texte?" (3_composition/flottants/habiller_une_image_avec_du_texte)
@@ -344,7 +344,7 @@ FAQuk: "Tables longer than a single page" (longtab)
 FAQfr: "Comment composer des tableaux de plus d'une page?" (3_composition/tableaux/tableau_sur_plusieurs_pages)
 
 FAQuk: "My words aren't being hyphenated" (nohyph)
-FAQfr: "La césure ne fonctionne pas !" (3_composition/langues/cesure/la_cesure_ne_fonctionne_pas)
+FAQfr: "Pourquoi la césure ne fonctionne pas?" (3_composition/langues/cesure/la_cesure_ne_fonctionne_pas)
 
 FAQuk: "Hyphenation exceptions" (hyphexcept)
 FAQfr: "Hyphenation exceptions" (3_composition/langues/cesure/nouveaux_motifs_de_cesure)
@@ -398,7 +398,7 @@ FAQuk: "References from the bibliography to the citation" (backref)
 FAQfr: "Comment référencer les pages contenant des citations?" (3_composition/annexes/bibliographie/referencer_les_pages_d_appel_d_une_reference_bibliographique)
 
 FAQuk: "Non-english bibliographies" (i18nbib)
-FAQfr: "Non-english bibliographies" (3_composition/annexes/bibliographie/bibliographies_internationales)
+FAQfr: "Comment mettre en forme une bibliographie en langue non-anglaise?" (3_composition/annexes/bibliographie/bibliographies_internationales)
 
 FAQuk: "Choosing a bibliography style" (whatbst)
 FAQfr: "Choosing a bibliography style" (3_composition/annexes/bibliographie/choisir_un_style_de_bibliographie)
