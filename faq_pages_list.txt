@@ -350,7 +350,7 @@ FAQuk: "Hyphenation exceptions" (hyphexcept)
 FAQfr: "Hyphenation exceptions" (3_composition/langues/cesure/nouveaux_motifs_de_cesure)
 
 FAQuk: "Weird hyphenation of words" (weirdhyphen)
-FAQfr: "Weird hyphenation of words" (3_composition/langues/cesure/cesures_bizarres3)
+FAQfr: "Pourquoi les coupures de mots sont bizarres?" (3_composition/langues/cesure/cesures_bizarres3)
 
 FAQuk: "(Merely) peculiar hyphenation" (oddhyphen)
 FAQfr: "Comment gérer des règles de césures spécifiques?" (3_composition/langues/cesure/cesures_bizarres)
@@ -368,7 +368,7 @@ FAQuk: "Preventing hyphenation of a particular word" (wdnohyph)
 FAQfr: "Preventing hyphenation of a particular word" (3_composition/langues/cesure/empecher_la_cesure_de_certains_mots)
 
 FAQuk: "Stopping all hyphenation" (hyphoff)
-FAQfr: "Stopping all hyphenation" (3_composition/langues/cesure/desactiver_completement_la_cesure)
+FAQfr: "Comment désactiver complètement la coupure des mots?" (3_composition/langues/cesure/desactiver_completement_la_cesure)
 
 FAQuk: "Repeating a command n times" (repeat-num)
 FAQfr: "Repeating a command _n_ times" (2_programmation/syntaxe/repeter_une_commande_n_fois)
