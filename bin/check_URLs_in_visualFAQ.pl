@@ -11,8 +11,6 @@ use constant FALSE => 0 ;
 
 #use List::Util qw{min max sum} ;
 use Getopt::Long ;
-use LWP::UserAgent ;
-use HTTP::Request::Common qw{ POST } ;
 
 
 my $base_dir_opt = '/var/lib/dokufaq/data/pages/' ;
@@ -23,6 +21,8 @@ GetOptions( 'base_dir=s'      => \$base_dir_opt,
 ######################################################################
 ## Parameters
 
+my %already_checked ;
+$already_checked{'#1'} = TRUE ;
 
 ######################################################################
 ## Prototypes
@@ -33,18 +33,16 @@ sub check_page ($) ;
 ######################################################################
 ## Real work
 
-my %already_checked ;
-
 while( <> )
   {chomp ;
    if ( /\\faq\{([^\}]+)\}/ )
      {my $page_full_name = $1 ;
 
       if (    not exists $already_checked{$page_full_name}
-	  and not check_page( $page_full_name )
-	 )
+          and not check_page( $page_full_name )
+         )
         {print $., "\t", $page_full_name, "\n" ;
-	}
+        }
       $already_checked{$page_full_name}++ ;
      }
    elsif ( /%.*FAQfr:\.+\(\s*(\S+)\s*\)" / )
@@ -53,10 +51,10 @@ while( <> )
       my $page_full_name = $1 ;
 
       if (    not exists $already_checked{$page_full_name}
-	  and not check_page( $page_full_name )
-	 )
+          and not check_page( $page_full_name )
+         )
         {print $., "\t", $page_full_name, "\n" ;
-	}
+        }
       $already_checked{$page_full_name}++ ;
      }
   }
@@ -65,7 +63,6 @@ while( <> )
 
 exit 0 ;
 
-######################################################################
 ######################################################################
 ######################################################################
 ## Subs
@@ -82,7 +79,6 @@ sub check_page ($)
    {return undef() ;
    }
 }
-
 
 
 __END__
