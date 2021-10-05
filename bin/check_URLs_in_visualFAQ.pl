@@ -1,7 +1,7 @@
 #!/usr/bin/perl
 
 ## Syntax:
-# $ ~/src/visualFAQ-fr/bin/check_URLs_in_visualFAQ.pl --base_url 'https://faq.gutenberg.eu.org/' visualFAQ-fr.tex
+# $ ~/src/visualFAQ-fr/bin/check_URLs_in_visualFAQ.pl --base_dir '/var/lib/dokufaq/data/pages/' visualFAQ-fr.tex
 
 use strict ;
 use warnings ;
@@ -15,8 +15,8 @@ use LWP::UserAgent ;
 use HTTP::Request::Common qw{ POST } ;
 
 
-my $base_url_opt = 'https://faq.gutenberg.eu.org/' ;
-GetOptions( 'base_url=s'       => \$base_url_opt,
+my $base_dir_opt = '/var/lib/dokufaq/data/pages/' ;
+GetOptions( 'base_dir=s'      => \$base_dir_opt,
           ) or die "Cannot parse options" ;
 
 
@@ -27,24 +27,37 @@ GetOptions( 'base_url=s'       => \$base_url_opt,
 ######################################################################
 ## Prototypes
 
-sub check_url ($) ;
+sub check_page ($) ;
 
 
 ######################################################################
 ## Real work
 
-our $ua = LWP::UserAgent->new() ;
-my $error_count = 0 ;
-
+my %already_checked ;
 
 while( <> )
   {chomp ;
    if ( /\\faq\{([^\}]+)\}/ )
      {my $page_full_name = $1 ;
 
-      if ( not check_url( $base_url_opt.$page_full_name ) )
-        {#FIXME
+      if (    not exists $already_checked{$page_full_name}
+	  and not check_page( $page_full_name )
+	 )
+        {print $., "\t", $page_full_name, "\n" ;
 	}
+      $already_checked{$page_full_name}++ ;
+     }
+   elsif ( /%.*FAQfr:\.+\(\s*(\S+)\s*\)" / )
+     {# Same thing the previously, but I want errors in the \faq{} form
+      # to be reported in priority
+      my $page_full_name = $1 ;
+
+      if (    not exists $already_checked{$page_full_name}
+	  and not check_page( $page_full_name )
+	 )
+        {print $., "\t", $page_full_name, "\n" ;
+	}
+      $already_checked{$page_full_name}++ ;
      }
   }
 
@@ -57,16 +70,17 @@ exit 0 ;
 ######################################################################
 ## Subs
 
-sub check_url ($)
-{my $url = shift ;
+sub check_page ($)
+{my $page_name = shift ;
 
- my $req = HTTP::Request->new( GET => $url ) ;
- my $res = $ua->request( $req ) ;
-
- #FIXME
-
-
- return ;
+ if (    -e $base_dir_opt.'/'.$page_name.'.txt'
+     and -s $base_dir_opt.'/'.$page_name.'.txt' >= 10
+    )
+   {return TRUE ;
+   }
+ else
+   {return undef() ;
+   }
 }
 
 
