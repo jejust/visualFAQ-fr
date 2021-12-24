@@ -183,25 +183,25 @@
 \makeatother
 
 % FAQuk:   "Alternative head- and footlines in LaTeX" (fancyhdr)
-%   FAQfr: "Comment définir les hauts et bas de page?" (3_composition/texte/pages/composer_des_en-tetes_et_pieds_de_page)
+%   FAQfr: "Comment définir les hauts et bas de page?" (3_composition/texte/pages/entetes/composer_des_en-tetes_et_pieds_de_page)
 % FAQuk:   "Page numbering '<n> of <m>'" (nofm)
 %   FAQfr: "Comment obtenir la numérotation « page <K> sur <N> »?" (3_composition/texte/pages/numerotation_des_pages/numeroter_les_pages_avec_k_sur_n)
 % FAQuk:   "How many pages are there in my document?" (howmanypp)
-%   FAQfr: "Comment compter le nombre de pages d'un document?" (3_composition/texte/document/combien_de_pages_a_mon_document)
+%   FAQfr: "Comment compter le nombre de pages d'un document?" (3_composition/document/combien_de_pages_a_mon_document)
 \fancypagestyle{fancybasic}{%
   \fancyhf{}
   \fancyhead[LO,RE]{%
-    \faq{3_composition/texte/pages/composer_des_en-tetes_et_pieds_de_page}{"Comment définir les hauts et bas de page?"}{%
+    \faq{3_composition/texte/pages/entetes/composer_des_en-tetes_et_pieds_de_page}{"Comment définir les hauts et bas de page?"}{%
       \usefont{T1}{pzc}{m}{it}\leftmark}}
   \fancyhead[LE,RO]{%
-    \faq{3_composition/texte/pages/composer_des_en-tetes_et_pieds_de_page}{"Comment définir les hauts et bas de page?"}{%
+    \faq{3_composition/texte/pages/entetes/composer_des_en-tetes_et_pieds_de_page}{"Comment définir les hauts et bas de page?"}{%
       \usefont{T1}{pzc}{m}{it}\rightmark}}
   \fancyfoot[CE]{%
     \faq{3_composition/texte/pages/numerotation_des_pages/numeroter_les_pages_avec_k_sur_n}%
       {"Comment obtenir la numérotation 'page <K> sur <N>'?"}%
       {Page~\thepage\ sur~\pageref*{LastPage}}\strut}
   \fancyfoot[CO]{%
-    \faq{3_composition/texte/document/combien_de_pages_a_mon_document}%
+    \faq{3_composition/document/combien_de_pages_a_mon_document}%
       {"Comment compter le nombre de pages d'un document?"}%
       {Page~\thepage\ sur~\pageref*{LastPage}}\strut}
 }
@@ -451,11 +451,11 @@ lorem sem sagittis est, vit\ae{} laoreet odio arcu auctor
 consectetuer.
 
 % FAQuk:   "What's the name of this file" (filename)
-%   FAQfr: "Comment afficher le nom du fichier compilé?" (3_composition/texte/document/utiliser_le_nom_de_fichier_dans_le_document)
+%   FAQfr: "Comment afficher le nom du fichier compilé?" (3_composition/document/utiliser_le_nom_de_fichier_dans_le_document)
 % FAQuk:   "Printing the time" (time)
 %   FAQfr: "Comment insérer l'heure dans un document?" (3_composition/texte/mots/inserer_l_heure_dans_un_document)
 In vehicula sagittis nisl. M\ae{}cenas malesuada feugiat eros. Nulla
-facilisis accumsan quam. Nulla id nunc \faq{3_composition/texte/document/utiliser_le_nom_de_fichier_dans_le_document}{"Comment afficher le nom du fichier compilé?"}{\strut\texttt{\jobname.tex}}
+facilisis accumsan quam. Nulla id nunc \faq{3_composition/document/utiliser_le_nom_de_fichier_dans_le_document}{"Comment afficher le nom du fichier compilé?"}{\strut\texttt{\jobname.tex}}
 duis \faq{3_composition/texte/mots/inserer_l_heure_dans_un_document}{"Comment insérer l'heure dans un document?"}{\strut\today~10:51pm} facilisis tristique
 lectus. Vestibulum ante ipsum primis in faucibus orci luctus et
 ultrices posuere cubilia cur\ae{}; Vivamus dictum nibh vit\ae{} mi.
@@ -744,11 +744,11 @@ intellegam.}  {\usefont{T1}{pnc}{m}{n} Ex nihil aperiri per.}
 \end{figure}
 
 % FAQuk:   "Footnotes in LaTeX section headings" (ftnsect)
-%   FAQfr: "Comment mettre une note de bas de page dans un titre?" (3_composition/texte/footnotes/inserer_une_note_de_bas_de_page_dans_un_titre)
+%   FAQfr: "Comment mettre une note de bas de page dans un titre?" (3_composition/texte/pages/footnotes/inserer_une_note_de_bas_de_page_dans_un_titre)
 \addtocounter{footnote}{1}
 \subsection[Mauris sagittis]{%
   Mauris sagittis%
-  \faq{3_composition/texte/footnotes/inserer_une_note_de_bas_de_page_dans_un_titre}{"Comment mettre une note de bas de page dans un titre?"}%
+  \faq{3_composition/texte/pages/footnotes/inserer_une_note_de_bas_de_page_dans_un_titre}{"Comment mettre une note de bas de page dans un titre?"}%
                {\normalfont\textsuperscript{\footnotesize{\thefootnote}}}%
   \footnotetext{Nulla non augue sed sem accumsan lobortis.}}
 
@@ -1654,7 +1654,7 @@ dolore, qui vero, nulla suscipit qui.
 }
 
 % FAQuk:   "How to create crop marks" (crop)
-%   FAQfr: "Comment tracer des hirondelles?" (3_composition/divers/hirondelles)
+%   FAQfr: "Comment tracer des hirondelles?" (3_composition/texte/pages/hirondelles)
 \newsavebox{\cropulc}
 \savebox{\cropulc}{%
 \begin{picture}(40,40)(-35,-5)
@@ -1709,7 +1709,7 @@ dolore, qui vero, nulla suscipit qui.
 }
 \newlength{\pageminusmargin}
 \setlength{\pageminusmargin}{\paperwidth-50pt}
-\newcommand*{\cropfaq}[1]{\faq{3_composition/divers/hirondelles}{"Comment tracer des hirondelles?"}{#1}}
+\newcommand*{\cropfaq}[1]{\faq{3_composition/texte/pages/hirondelles}{"Comment tracer des hirondelles?"}{#1}}
 \AddToShipoutPicture*{%
   \AtPageUpperLeft{%
     \put(10,-50){\cropfaq{\usebox{\cropulc}}}}
@@ -1741,7 +1741,7 @@ dolore, qui vero, nulla suscipit qui.
 % FAQuk:   "Labelling graphics" (labelfig)
 %   FAQfr: "Comment placer du texte LaTeX dans un graphique?" (3_composition/illustrations/annoter_un_graphique)
 % FAQuk:   "Footnotes in captions" (ftncapt)
-%   FAQfr: "Comment obtenir une note de bas de page dans une légende?" (3_composition/texte/footnotes/inserer_une_note_de_bas_de_page_dans_une_legende)
+%   FAQfr: "Comment obtenir une note de bas de page dans une légende?" (3_composition/texte/pages/footnotes/inserer_une_note_de_bas_de_page_dans_une_legende)
 \begin{figure}[tbp]
   \centering
   \begin{minipage}{5in}
@@ -1777,7 +1777,7 @@ dolore, qui vero, nulla suscipit qui.
     \end{picture}
     \caption[Duis iriure aliquam aliquam suscipit ex vel commodo]
             {Duis iriure aliquam aliquam suscipit ex vel commodo%
-             \faq{3_composition/texte/footnotes/inserer_une_note_de_bas_de_page_dans_une_legende}{"Comment obtenir une note de bas de page dans une légende?"}{\strut\nolinkfootnotemark}}%
+             \faq{3_composition/texte/pages/footnotes/inserer_une_note_de_bas_de_page_dans_une_legende}{"Comment obtenir une note de bas de page dans une légende?"}{\strut\nolinkfootnotemark}}%
     \label{fig:labelfig}
     \footnotetext[1]{Pellentesque sagittis vestibulum aliquam habitant varius.}%
   \end{minipage}
@@ -2117,10 +2117,10 @@ eu, porta eget, risus. Quisque nisi pr\ae{}sent nibh urna, dapibus eu,
 pretium vit\ae{} sollicitudin et nunc,
 
 % FAQuk:   "Re-using an equation" (reuseq)
-%   FAQfr: "Comment numéroter les équations?" (4_domaines_specialises/mathematiques/numeroter_les_equations)
+%   FAQfr: "Comment numéroter les équations?" (4_domaines_specialises/mathematiques/equations/numeroter_les_equations)
 \begin{equation}
 \alpha \leq \int_m^{\log_2 m} K^{*}(z)\:\text{d}z < \beta \:,
-\tag{\faq{4_domaines_specialises/mathematiques/numeroter_les_equations}{"Comment numéroter les équations?"}{\hypergetref{eq:repeatable}\strut}}
+\tag{\faq{4_domaines_specialises/mathematiques/equations/numeroter_les_equations}{"Comment numéroter les équations?"}{\hypergetref{eq:repeatable}\strut}}
 \end{equation}
 
 \noindent
