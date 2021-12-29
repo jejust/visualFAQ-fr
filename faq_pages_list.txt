@@ -1,11 +1,11 @@
 FAQuk: "Alternative head- and footlines in LaTeX" (fancyhdr)
-FAQfr: "Comment définir les hauts et bas de page?" (3_composition/texte/pages/composer_des_en-tetes_et_pieds_de_page)
+FAQfr: "Comment définir les hauts et bas de page?" (3_composition/texte/pages/entetes/composer_des_en-tetes_et_pieds_de_page)
 
 FAQuk: "Page numbering '<n> of <m>'" (nofm)
 FAQfr: "Comment obtenir la numérotation « page <K> sur <N> »?" (3_composition/texte/pages/numerotation_des_pages/numeroter_les_pages_avec_k_sur_n)
 
 FAQuk: "How many pages are there in my document?" (howmanypp)
-FAQfr: "Comment compter le nombre de pages d'un document?" (3_composition/texte/document/combien_de_pages_a_mon_document)
+FAQfr: "Comment compter le nombre de pages d'un document?" (3_composition/document/combien_de_pages_a_mon_document)
 
 FAQuk: "Page numbering by chapter" (pagebychap)
 FAQfr: "Comment réinitialiser la numérotation des pages à chaque chapitre?" (3_composition/texte/pages/numerotation_des_pages/numeroter_les_pages_par_chapitre)
@@ -14,7 +14,10 @@ FAQuk: "How to get rid of page numbers" (nopageno)
 FAQfr: "Comment supprimer la numérotation des pages?" (3_composition/texte/pages/numerotation_des_pages/supprimer_les_numeros_de_pages)
 
 FAQuk: "I asked for 'empty', but the page is numbered" (emptynum)
-FAQfr: "Comment supprimer la numérotation des pages?" (3_composition/texte/pages/numerotation_des_pages/supprimer_les_numeros_de_pages)
+FAQfr: "Pourquoi ma page reste numérotée malgré le style de page 'empty'?" (3_composition/texte/pages/numerotation_des_pages/supprimer_les_numeros_de_pages2)
+
+FAQuk: "Breaking boxes of text" (breakbox)
+FAQfr: "Comment scinder des boîtes de texte?" (3_composition/texte/pages/couper_des_boites)
 
 FAQuk: "The style of document titles" (titlsty)
 FAQfr: "Comment modifier le style des titres de sectionnement?" (3_composition/texte/titres/modifier_le_style_des_titres)
@@ -35,7 +38,7 @@ FAQuk: "Changing the space between letters" (letterspace)
 FAQfr: "Comment modifier l'espacement entre caractères?" (3_composition/texte/mots/modifier_l_espacement_entre_les_caracteres)
 
 FAQuk: "What's the name of this file" (filename)
-FAQfr: "Comment afficher le nom du fichier compilé?" (3_composition/texte/document/utiliser_le_nom_de_fichier_dans_le_document)
+FAQfr: "Comment afficher le nom du fichier compilé?" (3_composition/document/utiliser_le_nom_de_fichier_dans_le_document)
 
 FAQuk: "Printing the time" (time)
 FAQfr: "Comment insérer l'heure dans un document?" (3_composition/texte/mots/inserer_l_heure_dans_un_document)
@@ -101,7 +104,7 @@ FAQuk: "The style of captions" (captsty)
 FAQfr: "Comment changer la mise en forme des légendes?" (3_composition/flottants/legendes/modifier_l_apparence_des_legendes)
 
 FAQuk: "Footnotes in LaTeX section headings" (ftnsect)
-FAQfr: "Comment mettre une note de bas de page dans un titre?" (3_composition/texte/footnotes/inserer_une_note_de_bas_de_page_dans_un_titre)
+FAQfr: "Comment mettre une note de bas de page dans un titre?" (3_composition/texte/pages/footnotes/inserer_une_note_de_bas_de_page_dans_un_titre)
 
 FAQuk: "Double-spaced documents in LaTeX" (linespace)
 FAQfr: "Comment modifier l'interligne d'un document?" (3_composition/texte/paragraphes/modifier_l_interligne)
@@ -173,10 +176,10 @@ FAQuk: "Code listings in LaTeX" (codelist)
 FAQfr: "Comment insérer un code source dans un document?" (4_domaines_specialises/informatique/inserer_du_code_source_informatique)
 
 FAQuk: "Marking changed parts of your document" (changebars)
-FAQfr: "Comment afficher les modifications dans un document?" (3_composition/texte/document/signaler_des_changements_entre_versions)
+FAQfr: "Comment afficher les modifications dans un document?" (3_composition/document/signaler_des_changements_entre_versions)
 
 FAQuk: "Putting bibliography entries in text" (bibinline)
-FAQfr: "Putting bibliography entries in text" (3_composition/annexes/bibliographie/inserer_les_references_biblio_dans_le_texte)
+FAQfr: "Comment faire apparaître les entrées bibliographiques dans le texte?" (3_composition/annexes/bibliographie/inserer_les_references_biblio_dans_le_texte)
 
 FAQuk: "Parallel setting of text" (parallel)
 FAQfr: "Comment obtenir des colonnes parallèles?" (3_composition/texte/pages/composer_des_paragraphes_en_vis_a_vis)
@@ -191,7 +194,7 @@ FAQuk: "Diagonal separation in corner cells of tables" (slashbox)
 FAQfr: "Comment diviser une cellule par une diagonale?" (3_composition/tableaux/cellules/diviser_une_cellule_en_diagonale)
 
 FAQuk: "Merging cells in a column of a table" (multirow)
-FAQfr: "Merging cells in a column of a table" (3_composition/tableaux/cellules/fusionner_des_cellule_dans_une_colonne)
+FAQfr: "Comment fusionner des cellules d'une même colonne dans un tableau?" (3_composition/tableaux/cellules/fusionner_des_cellule_dans_une_colonne)
 
 FAQuk: "Why are my sections numbered 0.1 ...?" (zerochap)
 FAQfr: "Pourquoi mes sections sont numérotées « 0.1 » et ainsi de suite?" (3_composition/texte/titres/pourquoi_les_numeros_de_sections_commencent_par_un_zero)
@@ -212,7 +215,7 @@ FAQuk: "Facing floats on 2-page spread" (dpfloat)
 FAQfr: "Comment mettre des flottants sur des pages en vis-à-vis?" (3_composition/flottants/mettre_des_flottants_en_vis_a_vis)
 
 FAQuk: "Merging cells in a column of a table" (multirow)
-FAQfr: "Merging cells in a column of a table" (3_composition/tableaux/cellules/fusionner_des_cellule_dans_une_colonne)
+FAQfr: "Comment fusionner des cellules d'une même colonne dans un tableau?" (3_composition/tableaux/cellules/fusionner_des_cellule_dans_une_colonne)
 
 FAQuk: "Footnotes in tables" (footintab)
 FAQfr: "Comment obtenir une note de bas de page dans un tableau?" (3_composition/tableaux/notes_de_bas_de_tableau)
@@ -233,7 +236,7 @@ FAQuk: "Page number is wrong at start of page" (wrongpn)
 FAQfr: "Pourquoi un numéro de page courante peut être faux en haut de page?" (3_composition/texte/pages/numerotation_des_pages/le_numero_de_page_est_incorrect)
 
 FAQuk: "Choosing a bibliography style" (whatbst)
-FAQfr: "Choosing a bibliography style" (3_composition/annexes/bibliographie/choisir_un_style_de_bibliographie)
+FAQfr: "Comment choisir un style de bibliographie BibTeX?" (3_composition/annexes/bibliographie/choisir_un_style_de_bibliographie)
 
 FAQuk: "Putting things at fixed positions on the page" (abspos)
 FAQfr: "Comment mettre des éléments à une position donnée sur une page?" (3_composition/texte/pages/positionner_un_objet_de_facon_absolue_sur_la_page)
@@ -251,10 +254,10 @@ FAQuk: "Changing the margins in LaTeX" (changemargin)
 FAQfr: "Comment redéfinir les marges d'un document?" (3_composition/texte/pages/modifier_les_marges_d_un_document)
 
 FAQuk: "My section title is too wide for the page header" (runheadtoobig)
-FAQfr: "Comment réduire les rappels de titres dans un haut ou bas de page?" (3_composition/texte/pages/raccourcir_les_rappels_de_titres_en_haut_de_page)
+FAQfr: "Comment réduire les rappels de titres dans un haut ou bas de page?" (3_composition/texte/pages/entetes/raccourcir_les_rappels_de_titres_en_haut_de_page)
 
 FAQuk: "How to create crop marks" (crop)
-FAQfr: "Comment tracer des hirondelles?" (3_composition/divers/hirondelles)
+FAQfr: "Comment tracer des hirondelles?" (3_composition/texte/pages/hirondelles)
 
 FAQuk: "Books relevant to TeX and friends" (book-lists)
 FAQfr: "Livres sur TeX et compagnie" (1_generalites/documentation/livres/start)
@@ -269,16 +272,16 @@ FAQuk: "Freely available (La)TeX books" (ol-books)
 FAQfr: "Documentations en ligne" (1_generalites/documentation/documents/start)
 
 FAQuk: "Labelling graphics" (labelfig)
-FAQfr: "Labelling graphics" (3_composition/illustrations/annoter_un_graphique)
+FAQfr: "Comment placer du texte LaTeX dans un graphique?" (3_composition/illustrations/annoter_un_graphique)
 
 FAQuk: "Footnotes in captions" (ftncapt)
-FAQfr: "Comment obtenir une note de bas de page dans une légende?" (3_composition/texte/footnotes/inserer_une_note_de_bas_de_page_dans_une_legende)
+FAQfr: "Comment obtenir une note de bas de page dans une légende?" (3_composition/texte/pages/footnotes/inserer_une_note_de_bas_de_page_dans_une_legende)
 
 FAQuk: "Only one \baselineskip per paragraph" (baselinepar)
 FAQfr: "Comment contourner la limite d'un unique '\baselineskip' par paragraphe?" (3_composition/texte/paragraphes/un_seul_baselineskip_par_paragraphe)
 
 FAQuk: "Including a file verbatim in LaTeX" (verbfile)
-FAQfr: "Including a file verbatim in LaTeX" (4_domaines_specialises/informatique/inclure_un_fichier_en_mode_verbatim)
+FAQfr: "Comment inclure un fichier verbatim?" (4_domaines_specialises/informatique/inclure_un_fichier_en_mode_verbatim)
 
 FAQuk: "Including line numbers in typeset output" (linenos)
 FAQfr: "Comment numéroter les lignes d'un document?" (3_composition/texte/lignes/numeroter_les_lignes_d_un_document)
@@ -323,7 +326,7 @@ FAQuk: "Adjusting maths font sizes" (mathsize)
 FAQfr: "Adjusting maths font sizes" (4_domaines_specialises/mathematiques/tailles_de_fonte_en_mode_mathematique)
 
 FAQuk: "Re-using an equation" (reuseq)
-FAQfr: "Comment numéroter les équations?" (4_domaines_specialises/mathematiques/numeroter_les_equations)
+FAQfr: "Comment numéroter les équations?" (4_domaines_specialises/mathematiques/equations/numeroter_les_equations)
 
 FAQuk: "Ellipses" (mathlips)
 FAQfr: "Comment obtenir des points de suspension?" (4_domaines_specialises/mathematiques/points_de_suspension_mathematiques)
@@ -365,7 +368,7 @@ FAQuk: "The thickness of rules in LaTeX tables" (rulethk)
 FAQfr: "Comment modifier l'épaisseur des traits dans les tableaux?" (3_composition/tableaux/filets/epaisseur_des_lignes)
 
 FAQuk: "Preventing hyphenation of a particular word" (wdnohyph)
-FAQfr: "Preventing hyphenation of a particular word" (3_composition/langues/cesure/empecher_la_cesure_de_certains_mots)
+FAQfr: "Comment supprimer certaines césures?" (3_composition/langues/cesure/empecher_des_coupures_de_mots)
 
 FAQuk: "Stopping all hyphenation" (hyphoff)
 FAQfr: "Comment désactiver complètement la coupure des mots?" (3_composition/langues/cesure/desactiver_completement_la_cesure)
@@ -377,7 +380,7 @@ FAQuk: "Repeating something for each 'thing' in a set" (repeat-set)
 FAQfr: "Repeating something for each 'thing' in a set" (2_programmation/syntaxe/repeter_une_commande_pour_chaque_element_d_une_liste)
 
 FAQuk: "Version control using RCS, CVS or the like" (RCS)
-FAQfr: "Gestion de versions avec RCS, CVS ou équivalent" (3_composition/texte/document/inclure_des_informations_venant_d_un_gestionnaire_de_versions)
+FAQfr: "Gestion de versions avec RCS, CVS ou équivalent" (3_composition/document/inclure_des_informations_venant_d_un_gestionnaire_de_versions)
 
 FAQuk: "How to change LaTeX's 'fixed names'" (fixnam)
 FAQfr: "Comment changer les textes prédéfinis de LaTeX?" (3_composition/langues/traduire_le_titre_de_table_des_matieres_ou_bibliographie)
@@ -392,7 +395,7 @@ FAQuk: "Capitalisation in BibTeX" (capbibtex)
 FAQfr: "Comment conserver les majuscules dans les titres?" (3_composition/annexes/bibliographie/conserver_les_majuscules_dans_les_titres)
 
 FAQuk: "Transcribed initials in BibTeX" (bibtranscinit)
-FAQfr: "Multi-letter initials in BibTeX" (3_composition/annexes/bibliographie/initiales_multiples_avec_bibtex)
+FAQfr: "Comment définir des initiales de prénom regroupant au moins deux lettres?" (3_composition/annexes/bibliographie/utiliser_les_deux_premieres_lettres_du_prenom_d_un_auteur)
 
 FAQuk: "References from the bibliography to the citation" (backref)
 FAQfr: "Comment référencer les pages contenant des citations?" (3_composition/annexes/bibliographie/referencer_les_pages_d_appel_d_une_reference_bibliographique)
@@ -401,16 +404,16 @@ FAQuk: "Non-english bibliographies" (i18nbib)
 FAQfr: "Comment mettre en forme une bibliographie en langue non-anglaise?" (3_composition/annexes/bibliographie/bibliographies_internationales)
 
 FAQuk: "Choosing a bibliography style" (whatbst)
-FAQfr: "Choosing a bibliography style" (3_composition/annexes/bibliographie/choisir_un_style_de_bibliographie)
+FAQfr: "Comment choisir un style de bibliographie BibTeX?" (3_composition/annexes/bibliographie/choisir_un_style_de_bibliographie)
 
 FAQuk: "Multiple citations" (mcite)
-FAQfr: "Multiple citations" (3_composition/annexes/bibliographie/references_biblio_multiples)
+FAQfr: "Comment fusionner des entrées dans la bibliographie?" (3_composition/annexes/bibliographie/references_biblio_multiples)
 
 FAQuk: "Creating a bibliography style" (custbib)
 FAQfr: "Comment créer mon style de bibliographie?" (3_composition/annexes/bibliographie/creer_un_style_de_bibliographie)
 
 FAQuk: "BibTeX sorting and name prefixes" (bibprefixsort)
-FAQfr: "BibTeX sorting and name prefixes" (3_composition/annexes/bibliographie/trier_des_noms_avec_prefixes)
+FAQfr: "Comment concilier le tri de BibTeX avec certaines formes de noms?" (3_composition/annexes/bibliographie/trier_des_noms_avec_prefixes)
 
 FAQuk: "Reducing spacing in the bibliography" (compactbib)
 FAQfr: "Comment compacter une bibliographie?" (3_composition/annexes/bibliographie/compacter_une_bibliographie)
@@ -418,8 +421,11 @@ FAQfr: "Comment compacter une bibliographie?" (3_composition/annexes/bibliograph
 FAQuk: "URLs in BibTeX bibliographies" (citeURL)
 FAQfr: "Comment citer une URL avec BibTeX?" (3_composition/annexes/bibliographie/citer_une_url)
 
+FAQuk: "URLs in BibTeX bibliographies" (citeURL)
+FAQfr: "Comment citer une URL avec BibTeX?" (3_composition/annexes/bibliographie/citer_une_url)
+
 FAQuk: "Multiple bibliographies?" (multbib)
-FAQfr: "Multiple bibliographies?" (3_composition/annexes/bibliographie/plusieurs_bibliographies_dans_un_document)
+FAQfr: "Comment obtenir plusieurs bibliographies dans un document?" (3_composition/annexes/bibliographie/gerer_plusieurs_bibliographies)
 
 FAQuk: "All the files used by this document" (filesused)
 FAQfr: "Comment connaître les versions des fichiers utilisées dans un document?" (5_fichiers/obtenir_la_liste_des_fichiers_utilises)
@@ -443,7 +449,7 @@ FAQuk: "Multiple indexes" (multind)
 FAQfr: "Comment générer plusieurs index?" (3_composition/annexes/index/generer_plusieurs_index)
 
 FAQuk: "A 'report' from lots of 'article's" (multidoc)
-FAQfr: "Comment constituer un recueil d'articles à partir de plusieurs documents sources?" (3_composition/texte/document/compiler_des_articles_en_un_seul_documents)
+FAQfr: "Comment constituer un recueil d'articles à partir de plusieurs documents sources?" (3_composition/texte/document/compiler_des_articles_en_un_seul_document)
 
 FAQuk: "Moving tables and figures in LaTeX" (floats)
 FAQfr: "Comment gérer proprement les flottants dans LaTeX?" (3_composition/flottants/pourquoi_faire_flotter_ses_figures_et_tableaux)
