@@ -116,13 +116,13 @@ FAQuk: "How to reduce list spacing" (complist)
 FAQfr: "Comment modifier les espacements dans les listes?" (3_composition/texte/listes/ajuster_l_espacement_dans_les_listes)
 
 FAQuk: "Sub- and superscript positioning for operators" (limits)
-FAQfr: "Comment positionner les limites des grands opérateurs?" (4_domaines_specialises/mathematiques/changer_la_position_des_limites_autour_des_sommes_et_integrales)
+FAQfr: "Comment positionner les limites des grands opérateurs?" (4_domaines_specialises/mathematiques/structures/operateurs/changer_la_position_des_limites_autour_des_sommes_et_integrales)
 
 FAQuk: "Set specifications and Dirac brackets" (braket)
 FAQfr: "Comment écrire les bra-kets de Dirac ou une spécification d'ensemble?" (4_domaines_specialises/mathematiques/symboles_de_separateurs)
 
 FAQuk: "Text inside maths" (mathstext)
-FAQfr: "Text inside maths" (4_domaines_specialises/mathematiques/composer_du_texte_en_mode_mathematique)
+FAQfr: "Comment placer du texte dans des mathématiques?" (4_domaines_specialises/mathematiques/composer_du_texte_en_mode_mathematique)
 
 FAQuk: "Sub- and superscript positioning for operators" (limits)
 FAQfr: "Comment positionner les limites des grands opérateurs?" (4_domaines_specialises/mathematiques/changer_la_position_des_limites_autour_des_sommes_et_integrales)
@@ -158,10 +158,10 @@ FAQuk: "Symbols for the number sets" (numbersets)
 FAQfr: "Comment écrire les symboles d'ensembles?" (4_domaines_specialises/mathematiques/symboles_d_ensembles)
 
 FAQuk: "Better script fonts for maths" (scriptfonts)
-FAQfr: "Better script fonts for maths" (4_domaines_specialises/mathematiques/police_script_pour_les_mathematiques)
+FAQfr: "Comment obtenir des lettres cursives?" (3_composition/texte/symboles/polices/cursives)
 
 FAQuk: "Setting bold Greek letters in LaTeX" (boldgreek)
-FAQfr: "Comment utiliser des lettres grecques grasses en mode mathématique?" (4_domaines_specialises/mathematiques/lettres_grecques_en_gras)
+FAQfr: "Comment utiliser des lettres grecques grasses en mode mathématique?" (4_domaines_specialises/mathematiques/symboles/polices/lettres_grecques_en_gras)
 
 FAQuk: "Conversion from (La)TeX to HTML" (LaTeX2HTML)
 FAQfr: "Conversion from (La)TeX to HTML" (5_fichiers/xml/convertir_du_latex_en_html)
@@ -218,7 +218,7 @@ FAQuk: "Merging cells in a column of a table" (multirow)
 FAQfr: "Comment fusionner des cellules d'une même colonne dans un tableau?" (3_composition/tableaux/cellules/fusionner_des_cellule_dans_une_colonne)
 
 FAQuk: "Footnotes in tables" (footintab)
-FAQfr: "Comment obtenir une note de bas de page dans un tableau?" (3_composition/tableaux/notes_de_bas_de_tableau)
+FAQfr: "Comment mettre une note de bas de page dans un tableau?" (3_composition/tableaux/notes_de_bas_de_tableau)
 
 FAQuk: "Controlling widows and orphans" (widows)
 FAQfr: "Comment éviter les lignes veuves ou orphelines?" (3_composition/texte/pages/eviter_les_veuves_et_les_orphelines)
@@ -311,19 +311,19 @@ FAQuk: "The comma as a decimal separator" (dec_comma)
 FAQfr: "Comment faire de la virgule le séparateur décimal?" (3_composition/langues/utiliser_la_virgule_comme_separateur_decimal)
 
 FAQuk: "Roman theorems" (theoremfmt)
-FAQfr: "Comment obtenir un texte de théorème en caractères romains?" (4_domaines_specialises/mathematiques/ecrire_les_theoremes_en_romain)
+FAQfr: "Comment obtenir un texte de théorème en caractères romains?" (4_domaines_specialises/mathematiques/symboles/polices/ecrire_les_theoremes_en_romain)
 
 FAQuk: "Proof environment" (proof)
 FAQfr: "Comment ajouter un carré en fin de démonstration?" (4_domaines_specialises/mathematiques/symboles/symbole_cqfd)
 
 FAQuk: "Defining a new log-like function in LaTeX" (newfunction)
-FAQfr: "Defining a new log-like function in LaTeX" (4_domaines_specialises/mathematiques/definir_un_nouvel_operateur)
+FAQfr: "Comment déclarer de nouveaux opérateurs mathématiques?" (4_domaines_specialises/mathematiques/definir_un_nouvel_operateur)
 
 FAQuk: "Cancelling terms in maths expressions" (cancellation)
 FAQfr: "Comment biffer des termes dans une expression mathématique?" (4_domaines_specialises/mathematiques/barrer_des_termes)
 
 FAQuk: "Adjusting maths font sizes" (mathsize)
-FAQfr: "Adjusting maths font sizes" (4_domaines_specialises/mathematiques/tailles_de_fonte_en_mode_mathematique)
+FAQfr: "Comment ajuster la taille des polices mathématiques?" (4_domaines_specialises/mathematiques/symboles/polices/tailles_de_fonte_en_mode_mathematique)
 
 FAQuk: "Re-using an equation" (reuseq)
 FAQfr: "Comment numéroter les équations?" (4_domaines_specialises/mathematiques/equations/numeroter_les_equations)
@@ -332,13 +332,13 @@ FAQuk: "Ellipses" (mathlips)
 FAQfr: "Comment obtenir des points de suspension?" (4_domaines_specialises/mathematiques/points_de_suspension_mathematiques)
 
 FAQuk: "Line-breaking in in-line maths" (brkinline)
-FAQfr: "Line-breaking in in-line maths" (4_domaines_specialises/mathematiques/coupures_de_lignes_en_mode_mathematique)
+FAQfr: "Comment gérer les sauts de ligne dans des mathématiques placées dans le texte?" (4_domaines_specialises/mathematiques/coupures_de_lignes_en_mode_mathematique)
 
 FAQuk: "Extra vertical space in floats" (vertspacefloat)
 FAQfr: "Comment supprimer l'espace en trop autour des flottants?" (3_composition/flottants/trop_d_espace_dans_un_flottant)
 
 FAQuk: "Spacing lines in tables" (struttab)
-FAQfr: "Spacing lines in tables" (3_composition/tableaux/lignes/augmenter_la_largeur_des_lignes_d_un_tableau)
+FAQfr: "Comment améliorer l'espacement entre les lignes d'un tableau?" (3_composition/tableaux/lignes/augmenter_la_largeur_des_lignes_d_un_tableau)
 
 FAQuk: "Automatic sizing of minipage" (varwidth)
 FAQfr: "Comment optimiser la largeur d'une minipage?" (3_composition/texte/paragraphes/ajuster_la_taille_d_une_minipage)
@@ -350,7 +350,7 @@ FAQuk: "My words aren't being hyphenated" (nohyph)
 FAQfr: "Pourquoi la césure ne fonctionne pas?" (3_composition/langues/cesure/la_cesure_ne_fonctionne_pas)
 
 FAQuk: "Hyphenation exceptions" (hyphexcept)
-FAQfr: "Hyphenation exceptions" (3_composition/langues/cesure/nouveaux_motifs_de_cesure)
+FAQfr: "Comment définir des exceptions aux motifs de césure?" (3_composition/langues/cesure/nouveaux_motifs_de_cesure)
 
 FAQuk: "Weird hyphenation of words" (weirdhyphen)
 FAQfr: "Pourquoi les coupures de mots sont bizarres?" (3_composition/langues/cesure/cesures_bizarres3)
@@ -374,10 +374,10 @@ FAQuk: "Stopping all hyphenation" (hyphoff)
 FAQfr: "Comment désactiver complètement la coupure des mots?" (3_composition/langues/cesure/desactiver_completement_la_cesure)
 
 FAQuk: "Repeating a command n times" (repeat-num)
-FAQfr: "Repeating a command _n_ times" (2_programmation/syntaxe/repeter_une_commande_n_fois)
+FAQfr: "Comment répétéer une commande N fois?" (2_programmation/syntaxe/repeter_une_commande_n_fois)
 
 FAQuk: "Repeating something for each 'thing' in a set" (repeat-set)
-FAQfr: "Repeating something for each 'thing' in a set" (2_programmation/syntaxe/repeter_une_commande_pour_chaque_element_d_une_liste)
+FAQfr: "Comment répéter une action pour chaque élément d'un ensemble?" (2_programmation/syntaxe/repeter_une_commande_pour_chaque_element_d_une_liste)
 
 FAQuk: "Version control using RCS, CVS or the like" (RCS)
 FAQfr: "Gestion de versions avec RCS, CVS ou équivalent" (3_composition/document/inclure_des_informations_venant_d_un_gestionnaire_de_versions)
@@ -449,7 +449,7 @@ FAQuk: "Multiple indexes" (multind)
 FAQfr: "Comment générer plusieurs index?" (3_composition/annexes/index/generer_plusieurs_index)
 
 FAQuk: "A 'report' from lots of 'article's" (multidoc)
-FAQfr: "Comment constituer un recueil d'articles à partir de plusieurs documents sources?" (3_composition/texte/document/compiler_des_articles_en_un_seul_document)
+FAQfr: "Comment constituer un recueil d'articles à partir de plusieurs documents sources?" (3_composition/document/compiler_des_articles_en_un_seul_document)
 
 FAQuk: "Moving tables and figures in LaTeX" (floats)
 FAQfr: "Comment gérer proprement les flottants dans LaTeX?" (3_composition/flottants/pourquoi_faire_flotter_ses_figures_et_tableaux)
