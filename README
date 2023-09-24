@@ -20,7 +20,7 @@ suffit de cliquer sur l'hyperlien qui correspond à ce que vous souhaitez
 faire -- ou ne pas faire -- et la FAQ LaTeX visuelle enverra votre
 navigateur Web à la page correspondante de la FAQ LaTeX francophone,
 sur le site:
-                 https://faq.gutenberg.eu.org/
+                 https://www.latex-fr.net/
 
 Cette version francophone est une adaptation du package original, en
 anglais, de Scott Pakin, que nous remercions chaleureusement pour
@@ -46,7 +46,7 @@ Short Description in English
 The Visual LaTeX FAQ is an innovative new search interface on LaTeX
 Frequently Asked Questions. This version is a French translation and
 links to the French-speaking FAQ, hosted at:
-                https://faq.gutenberg.eu.org/
+                https://www.latex-fr.net/
 
 Interested in the Visual LaTeX FAQ, but not familiar with French?
 Please have a look at the original package, in English:
@@ -61,8 +61,8 @@ to French.
 Copyright and license
 =====================
 
-Copyright (C) 2015-2022 by Scott Pakin <scott+vfaq@pakin.org>, for the original version, in English
-Copyright (C) 2021-2022 by Jérémy Just <jeremy@jejust.fr>, for the French version
+Copyright (C) 2015-2023 by Scott Pakin <scott+vfaq@pakin.org>, for the original version, in English
+Copyright (C) 2021-2023 by Jérémy Just <jeremy@jejust.fr>, for the French version
 
 This file may be distributed and/or modified under the conditions of
 the LaTeX Project Public License, either version 1.3c of this license
