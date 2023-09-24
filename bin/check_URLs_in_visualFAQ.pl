@@ -1,7 +1,7 @@
 #!/usr/bin/perl
 
 ## Syntax:
-# $ ~/src/visualFAQ-fr/bin/check_URLs_in_visualFAQ.pl --base_dir '/var/lib/dokufaq/data/pages/' visualFAQ-fr.tex
+# $ ~/src/visualFAQ-fr/bin/check_URLs_in_visualFAQ.pl --base_dir '/opt/dokufaq/dokuwiki/data/pages/' visualFAQ-fr.tex
 
 use strict ;
 use warnings ;
