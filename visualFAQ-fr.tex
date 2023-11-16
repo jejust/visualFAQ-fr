@@ -71,7 +71,7 @@
   pdftitle={La FAQ LaTeX visuelle francophone},
   pdfauthor={Scott Pakin, Jeremy Just},
   pdfcontactemail={jeremy@jejust.fr},
-  pdfcontacturl={https://www.gutenberg.eu.org/faq},
+  pdfcontacturl={https://www.latex-fr.net/},
   pdfsubject={Réponses aux questions les plus courantes sur LaTeX},
   pdfkeywords={%
     LaTeX, TeX, tableaux, figures, flottants, mise en page, espacement,
@@ -122,8 +122,8 @@
   \begin{lrbox}{\faqbox}#3\end{lrbox}%
   \cooltooltip[0 1 0]{FAQ}{#2}%
 %    {http://www.tex.ac.uk/cgi-bin/texfaq2html?label=\firstlabel{#1}}%
-    {https://faq.gutenberg.eu.org/#1}%
-    {https://faq.gutenberg.eu.org/#1}%
+    {https://www.latex-fr.net/#1}%
+    {https://www.latex-fr.net/#1}%
     {\usebox{\faqbox}}%
 }
 
@@ -133,8 +133,8 @@
   \begin{lrbox}{\faqbox}#3\end{lrbox}%
   \cooltooltip[1 0 0]{FAQ}{#2}%
 %    {http://www.tex.ac.uk/cgi-bin/texfaq2html?label=\firstlabel{#1}}%
-    {https://faq.gutenberg.eu.org/#1}%
-    {https://faq.gutenberg.eu.org/#1}%
+    {https://www.latex-fr.net/#1}%
+    {https://www.latex-fr.net/#1}%
     {\usebox{\faqbox}}%
 }
 
@@ -380,13 +380,13 @@
 \begin{abstract}\strut
   Le pr\'esent document fournit une interface exp\'erimentale de
   ``recherche'' sur la \mbox{FAQ LaTeX francophone}
-  (\nolinkurl{https://faq.gutenberg.eu.org/}). Plut\^ot que de demander
+  (\nolinkurl{https://www.latex-fr.net/}). Plut\^ot que de demander
   \`a l'utilisateur de formuler une requ\^ete, elle montre simplement
   des exemples de mise en forme r\'elis\'es avec \LaTeX{} --- ainsi que
   des probl\`emes de mise en forme --- associ\'es \`a des hyperliens
   (verts ou rouges, selon le cas) vers les pages correspondantes de
   la FAQ. L'objectif est de faciliter la recherche de r\'eponses aux
-  questions relatives à \LaTeX{}, parfois difficiles \`a formuler avec
+  questions relatives \'a \LaTeX{}, parfois difficiles \`a formuler avec
   des mots, mais faciles \`a reconna\^itre visuellement.
 
   En bref: si vous voulez savoir comment un \'el\'ement de ce document
@@ -2903,13 +2903,14 @@ lectus id nostra porta suspendisse sem duis. Lectus, porttitor lectus.
 
 % FAQuk:   "Moving tables and figures in LaTeX" (floats)
 %   FAQfr: "Comment gérer proprement les flottants dans LaTeX?" (3_composition/flottants/pourquoi_faire_flotter_ses_figures_et_tableaux)
-\begin{figure}[p]
+\clearpage
+\begin{figure}[!p]
   \centering
   \antifaq{3_composition/flottants/pourquoi_faire_flotter_ses_figures_et_tableaux}{"Comment gérer proprement les flottants dans LaTeX?"}{\usebox{\logobox}}
   \caption{Nusquam probatus expetenda}
   \label{fig:endfloat-bad}
 \end{figure}
-\begin{figure}[p]
+\begin{figure}[!p]
   \centering
   \faq{3_composition/flottants/pourquoi_faire_flotter_ses_figures_et_tableaux}{"Comment gérer proprement les flottants dans LaTeX?"}{\usebox{\logobox}}
   \caption{Tale omittantur eum}
